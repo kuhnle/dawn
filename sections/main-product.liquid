@@ -31,6 +31,13 @@
     <link id="ModelViewerOverride" rel="stylesheet" href="{{ 'component-model-viewer-ui.css' | asset_url }}" media="print" onload="this.media='all'">
   {%- endif -%}
 
+{% assign request_only = false %}
+{% for t in product.tags %}
+  {%- if t contains 'anfragen' -%}
+    {% assign request_only = true %}
+      {%- endif -%}
+{%- endfor -%}
+
   <div class="product product--{{ section.settings.media_size }} product--{{ section.settings.gallery_layout }} grid grid--1-col {% if product.media.size > 0 %}grid--2-col-tablet{% else %}product--no-media{% endif %}">
     <div class="grid__item product__media-wrapper">
       <media-gallery id="MediaGallery-{{ section.id }}" role="region" {% if section.settings.enable_sticky_info %}class="product__media-gallery"{% endif %} aria-label="{{ 'products.product.media.gallery_viewer' | t }}" data-desktop-layout="{{ section.settings.gallery_layout }}">
@@ -212,21 +219,21 @@
                   {{ product.title | escape }}
                 </h2>
               </a>
-            </div>
-          {%- when 'price' -%}
-            <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>
-              {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
-            </div>
-            {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
-              <div class="product__tax caption rte">
-                {%- if shop.taxes_included -%}
-                  {{ 'products.product.include_taxes' | t }}
-                {%- endif -%}
-                {%- if shop.shipping_policy.body != blank -%}
-                  {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
-                {%- endif -%}
+            </div>               
+          {%- when 'price' -%}    
+              <div class="no-js-hidden" id="price-{{ section.id }}" role="status" {{ block.shopify_attributes }}>       
+                {%- render 'price', product: product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
               </div>
-            {%- endif -%}
+              {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
+                <div class="product__tax caption rte">
+                  {%- if shop.taxes_included -%}
+                    {{ 'products.product.include_taxes' | t }}
+                  {%- endif -%}
+                  {%- if shop.shipping_policy.body != blank -%}
+                    {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                  {%- endif -%}
+                </div>
+              {%- endif -%}         
             <div {{ block.shopify_attributes }}>
               {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
               {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
@@ -419,6 +426,14 @@
                 {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
                   <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}" disabled>
                   <div class="product-form__buttons">
+                  {% assign is_reserved = false %}
+                  {% for t in product.tags %}
+                    {%- if t contains 'reserviert' -%}
+                      <span class="product-form__submit button--secondary button button--full-width" style="cursor: not-allowed; background:#D3D3D3">{{ 'general.custom_code.reserved_label' | t }}</span>
+                      {% assign is_reserved = true %}
+                    {%- endif -%}
+                  {% endfor %}                    
+                 {%- if is_reserved == false and request_only == false -%}
                     <button
                       type="submit"
                       name="add"
@@ -426,8 +441,8 @@
                     {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
                     >
                         <span>
-                          {%- if product.selected_or_first_available_variant.available -%}
-                            {{ 'products.product.add_to_cart' | t }}
+                          {%- if product.selected_or_first_available_variant.available -%}                
+                                   {{ 'products.product.add_to_cart' | t }}                           
                           {%- else -%}
                             {{ 'products.product.sold_out' | t }}
                           {%- endif -%}
@@ -438,6 +453,9 @@
                           </svg>
                         </div>
                     </button>
+                 {%- endif -%}
+                    <a class="button button--full-width button--secondary" onclick="requestQuote()" href="/pages/anfrage">{{ 'general.custom_code.submit_request' | t }}</a>
+
                     {%- if block.settings.show_dynamic_checkout -%}
                       {{ form | payment_button }}
                     {%- endif -%}
@@ -554,6 +572,11 @@
     <script src="{{ 'product-model.js' | asset_url }}" defer></script>
   {%- endif -%}
 
+   <script>
+    function requestQuote() {
+    	sessionStorage.setItem("rfqProduct", {{ product.vendor | json }} + " " + {{ product.title | json }} + " - SKU: " + {{ product.selected_or_first_available_variant.sku | json }});                            
+    }
+  </script>
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       function isIE() {
