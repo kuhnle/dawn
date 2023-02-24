@@ -302,6 +302,12 @@
     }
   },
   "sections": {
+    "acquisition": {
+      "name": "Ankaufsformular",
+      "presets": {
+        "name": "Ankaufsformular"
+      }
+    },
     "all": {
       "padding": {
         "section_padding_heading": "Abschnitts-Padding",
