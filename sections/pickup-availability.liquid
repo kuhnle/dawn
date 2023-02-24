@@ -36,11 +36,12 @@
       <h2 class="h3 pickup-availability-drawer-title" id="PickupAvailabilityHeading">{{ product_variant.product.title | escape }}</h2>
       <button class="pickup-availability-drawer-button" type="button" aria-label="{{ 'accessibility.close' | t }}">{%- render 'icon-close' -%}</button>
     </div>
-
     {%- unless product_variant.product.has_only_default_variant -%}
       <p class="pickup-availability-variant">
         {%- for product_option in product_variant.product.options_with_values -%}
+        {% comment %}
           {{ product_option.name | escape }}:&nbsp;
+            {% endcomment %}
           {%- for value in product_option.values -%}
             {%- if product_option.selected_value == value -%}
               <span>{{ value | escape }}</span>
