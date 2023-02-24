@@ -92,10 +92,17 @@
             </h3>
           </div>
           <div class="card__badge {{ settings.badge_position }}">
+                  {% for t in card_product.tags %}
+                    {%- if t contains 'new' -%}
+                      {%- if card_product.available == true -%}
+                      <span class="badge badge--bottom-left color-new-product">{{ 'general.custom_code.new_label' | t }}</span>
+                      {%- endif -%}
+                    {%- endif -%}
+                  {% endfor %}          
             {%- if card_product.available == false -%}
               <span class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}">{{ 'products.product.sold_out' | t }}</span>
             {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
-              <span class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}">{{ 'products.product.on_sale' | t }}</span>
+              <span class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}">{{ 'products.product.on_sale' | t }}</span>              
             {%- endif -%}
           </div>
         </div>
