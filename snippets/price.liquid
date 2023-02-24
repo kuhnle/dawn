@@ -45,7 +45,18 @@
     <div class="price__regular">
       <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
       <span class="price-item price-item--regular">
-        {{ money_price }}
+         {% for t in product.tags %}
+              {%- if t contains 'anfragen' -%}
+                {% assign request_only = true %}
+              {%- endif -%}
+        {% endfor %}
+        {%- if request_only == true -%}
+            Preis auf Anfrage
+        {%- else -%}
+                {{ money_price }}
+             
+          {% endif %}
+        
       </span>
     </div>
     <div class="price__sale">
