@@ -1,0 +1,70 @@
+{% assign startYear = 1908 %}
+{% assign thisYear = 'now' | date: '%Y' %}
+{% assign yearsOpen = thisYear | minus: startYear %}
+
+<div
+  style="
+    color: white !important;
+    background: #3a3a3a;
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+  "
+>
+  <div
+    style="
+      padding: 3em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    "
+  >
+
+    <h2 id="trigger" style="text-align: center; color: white">{{ 'general.custom_code.about_us_counter' | t }}</h2>
+    <div class="counter-container" style="display: grid">
+      <div style="text-align: center">
+        <p class="count" style="font-size: 300%" data-stop="311"><b>0</b></p>
+        <p>{{ 'general.custom_code.about_us_1' | t }}</p>
+      </div>
+      <div style="text-align: center">
+        <p class="count" style="font-size: 300%" data-stop="95"><b>0</b></p>
+        <p>{{ 'general.custom_code.about_us_2' | t }}</p>
+      </div>
+      <div style="text-align: center">
+        <p class="count" style="font-size: 300%" data-stop="{{ pages['about-us'].metafields.my_fields.employees }}"><b>0</b></p>
+        <p>{{ 'general.custom_code.about_us_3' | t }}</p>
+      </div>
+      <div style="text-align: center">
+        <p class="count" style="font-size: 300%" data-stop="{{ yearsOpen }}"><b>0</b></p>
+        <p>{{ 'general.custom_code.about_us_4' | t }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script>// <![CDATA[
+var triggered = false;
+  $(window).scroll(function () {
+    var hT = $("#trigger").offset().top,
+      hH = $("#trigger").outerHeight(),
+      wH = $(window).height(),
+      wS = $(this).scrollTop();
+    if (wS > hT + hH - wH) {
+      if (triggered == false) {
+        $(".count").each(function () {
+          triggered = true;
+          var $this = $(this);
+          jQuery({ Counter: 0 }).animate(
+            { Counter: $this.attr("data-stop") },
+            {
+              duration: 2000,
+              easing: "swing",
+              step: function (now) {
+                $this.text(Math.ceil(now));
+              },
+            }
+          );
+        });
+      }
+    }
+  });
+// ]]></script>
