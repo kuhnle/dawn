@@ -78,3 +78,8 @@
 .collection__view-all a:not(.link) {
   margin-top: 1rem;
 }
+
+.color-new-product {
+  background: #3a3a3a;
+  color: white;
+}
