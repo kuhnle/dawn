@@ -12,8 +12,7 @@
         },
         "title": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "caption": {
           "type": "text",
@@ -24,14 +23,20 @@
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "3d4a5e14-a1d5-4e57-8db9-4547fe80d825": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Dieser Artikel unterliegt nach § 25a UStG der Differenzbesteuerung. Die Mehrwertsteuer wird auf der Rechnung daher nicht separat ausgewiesen.",
             "text_style": "body"
+          }
+        },
+        "dc9096c1-af5f-46cc-9311-863986ad70c8": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'tax-information' %}"
           }
         },
         "variant_picker": {
@@ -47,9 +52,10 @@
             "show_dynamic_checkout": false
           }
         },
-        "description": {
-          "type": "description",
+        "e5682e52-e1b0-4cde-9a72-80c2cc0605ff": {
+          "type": "custom_liquid",
           "settings": {
+            "custom_liquid": "{% render 'dynamic-product-body' %}"
           }
         },
         "d885d5bf-1b39-4668-b6f6-a3e0691bfb01": {
@@ -66,9 +72,10 @@
         "caption",
         "price",
         "3d4a5e14-a1d5-4e57-8db9-4547fe80d825",
+        "dc9096c1-af5f-46cc-9311-863986ad70c8",
         "variant_picker",
         "buy_buttons",
-        "description",
+        "e5682e52-e1b0-4cde-9a72-80c2cc0605ff",
         "d885d5bf-1b39-4668-b6f6-a3e0691bfb01"
       ],
       "settings": {

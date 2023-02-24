@@ -27,8 +27,15 @@
           "settings": {
           }
         },
+        "28c305ce-9045-479f-8e23-fc9667774daa": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'tax-information' %}"
+          }
+        },
         "3d4a5e14-a1d5-4e57-8db9-4547fe80d825": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Dieser Artikel unterliegt nach § 25a UStG der Differenzbesteuerung. Die Mehrwertsteuer wird auf der Rechnung daher nicht separat ausgewiesen.",
             "text_style": "body"
@@ -47,13 +54,20 @@
             "show_dynamic_checkout": false
           }
         },
-        "description": {
+        "169ff3b1-879d-4aeb-888f-95f396b717f0": {
           "type": "description",
           "settings": {
           }
         },
+        "e5682e52-e1b0-4cde-9a72-80c2cc0605ff": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'dynamic-product-body' %}"
+          }
+        },
         "d885d5bf-1b39-4668-b6f6-a3e0691bfb01": {
           "type": "popup",
+          "disabled": true,
           "settings": {
             "text": "Wie funktioniert unser Bewertungssystem?",
             "page": "bewertungssystem"
@@ -65,10 +79,12 @@
         "title",
         "caption",
         "price",
+        "28c305ce-9045-479f-8e23-fc9667774daa",
         "3d4a5e14-a1d5-4e57-8db9-4547fe80d825",
         "variant_picker",
         "buy_buttons",
-        "description",
+        "169ff3b1-879d-4aeb-888f-95f396b717f0",
+        "e5682e52-e1b0-4cde-9a72-80c2cc0605ff",
         "d885d5bf-1b39-4668-b6f6-a3e0691bfb01"
       ],
       "settings": {
