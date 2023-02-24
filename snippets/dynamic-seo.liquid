@@ -1,0 +1,86 @@
+{% if product.metafields.my_fields.reference != NIL %}
+    Referenz: {{ product.metafields.my_fields.reference.value }} •
+{% endif %}
+{% if product.metafields.my_fields.brand != NIL %}
+    Marke: {{ product.metafields.my_fields.brand.value }} •
+{% endif %}
+{% if product.metafields.my_fields.model != NIL %}
+    Modell: {{ product.metafields.my_fields.model.value }} •
+{% endif %}
+{% if product.metafields.my_fields.glass != NIL %}
+    Glas: {{ product.metafields.my_fields.glass.value }} •
+{% endif %}
+{% if product.metafields.my_fields.diameter != NIL %}
+    Durchmesser: {{ product.metafields.my_fields.diameter.value }} •
+{% endif %}
+{% if product.metafields.my_fields.year != NIL %}
+    Jahr: {{ product.metafields.my_fields.year.value }} •
+{% endif %}
+{% if product.metafields.my_fields.papers != NIL %}
+    Papiere: {% if product.metafields.my_fields.papers == true %}Ja{% endif %}{% if
+        product.metafields.my_fields.papers == false %}Nein{% endif %} •
+{% endif %}
+{% if product.metafields.my_fields.papers != NIL %}
+    Box: {% if product.metafields.my_fields.box == true %}Ja{% endif %}{% if
+        product.metafields.my_fields.box == false %}Nein{% endif %} •
+{% endif %}
+{% if product.metafields.my_fields.dial != NIL %}
+    Zifferblatt: {{ product.metafields.my_fields.dial.value }} •
+{% endif %}
+{% if product.metafields.my_fields.type != NIL %}
+    Typ: {{ product.metafields.my_fields.type.value }} •
+{% endif %}
+{% if product.metafields.my_fields.calibre != NIL %}
+    Uhrwerk: {{ product.metafields.my_fields.calibre.value }} •
+{% endif %}
+{% if product.metafields.my_fields.strap != NIL %}
+    Armband: {{ product.metafields.my_fields.strap.value }} •
+{% endif %}
+{% if product.metafields.my_fields.watch_case != NIL %}
+    Gehäuse: {{ product.metafields.my_fields.watch_case.value }} •
+{% endif %}
+{% if product.metafields.my_fields.cut != NIL %}
+    Schliff: {{ product.metafields.my_fields.cut.value }} •
+{% endif %}
+{% if product.metafields.my_fields.stones != NIL %}
+    Steinbesatz: {{ product.metafields.my_fields.stones.value }} •
+{% endif %}
+{% if product.metafields.my_fields.pearls != NIL %}
+    Perlen: {{ product.metafields.my_fields.pearls.value }} •
+{% endif %}
+{% if product.metafields.my_fields.material_list != NIL %}
+    
+{% endif %}
+{% if product.metafields.my_fields.length != NIL %}
+    Länge: {{ product.metafields.my_fields.length.value }} •
+{% endif %}
+{% if product.metafields.my_fields.ringsize != NIL %}
+    Ringgröße: {{ product.metafields.my_fields.ringsize.value }} •
+{% endif %}
+{% if product.metafields.my_fields.weight != NIL %}
+    Gewicht: {{ product.metafields.my_fields.weight.value }} •
+{% endif %}
+{% if product.metafields.my_fields.clarity != NIL %}
+    Reinheit: {{ product.metafields.my_fields.clarity.value }} •
+{% endif %}
+{% if product.metafields.my_fields.stone.color != NIL %}
+    Steinfarbe: {{ product.metafields.my_fields.stone_color.value }} •
+{% endif %}
+{% if product.metafields.my_fields.carat != NIL %}
+    Carat: {{ product.metafields.my_fields.carat.value }} •
+{% endif %}
+{% if product.metafields.my_fields.accessories_material != NIL %}
+    Material: {{ product.metafields.my_fields.accessories_material.value  }} •
+{% endif %}
+{% if product.metafields.my_fields.accessories_color != NIL %}
+    Farbe: {{ product.metafields.my_fields.accessories_color.value }} •
+{% endif %}
+{% if product.metafields.my_fields.special_info != NIL %}
+    Besonderheiten: {{ product.metafields.my_fields.special_info.value }} •
+{% endif %}
+{% if product.metafields.my_fields.accessories_grading != NIL %}
+    Zustand: {{ product.metafields.my_fields.accessories_grading.value }} •
+{% endif %} 
+{% if product.metafields.my_fields.internal_nr != NIL %}
+    Interne Nr: {{ product.metafields.my_fields.internal_nr.value }}
+{% endif %}
