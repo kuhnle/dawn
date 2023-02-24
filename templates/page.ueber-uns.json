@@ -1,0 +1,131 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "165571727041338c94": {
+      "type": "image-with-text",
+      "blocks": {
+        "1655717270382ab800-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Als einer der Top-Juweliere Deutschlands präsentieren wir in unserem traditionsreichen Geschäft in Fürth auch hochwertigen Schmuck und Uhren sowie Luxus-Accessoires mit Geschichte. Durch unsere einzigartige Auswahl, den kompetenten Service und die persönliche Beratung haben wir uns in der Vintage-Branche schnell einen Namen gemacht.<br/><br/>Für unsere Kunden sind wir stets auf der Suche nach dem Besonderen und höchster Qualität. Jedes unserer Vintage-Stücke wird in der hauseigenen, hoch spezialisierten und bestens ausgestatteten Meisterwerkstatt geprüft und verifiziert.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "1655717270382ab800-1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/csm-kuhnle-bild-3-28fafd2e5c-12_9HmK.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 0
+      }
+    },
+    "1655716968a6dbd6a6": {
+      "type": "image-with-text",
+      "blocks": {
+        "1655716968562d05a1-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Auch wenn Sie Ihre Wertgegenstände zu marktgerechten Preisen verkaufen möchten oder ein Gutachten z.B. für die Versicherung benötigen, sind wir Ihr erster Ansprechpartner und beraten Sie gern.<br/></p><p>Im Jahr 2020 konnten wir Vintage-Expertin Kerstin „Kiki“ Hermann für unser Team gewinnen.<br/><br/>Durch die langjährige und umfangreiche Tätigkeit als Leiterin des Expertenzentrums sowie der Uhrenabteilung für ein renommiertes Auktionshaus in Süddeutschland, hatte sie die Möglichkeit ihre Expertise ständig zu erweitern und viel Erfahrung zu sammeln.<br/><br/>Wir freuen uns auf Ihren Besuch!</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "1655716968562d05a1-1"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/kerstin-hermann_NpFU.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "16557174384edf5fef": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'dynamic-counter' %}",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 56
+      }
+    },
+    "16557176994adf7047": {
+      "type": "image-banner",
+      "blocks": {
+        "1655717699ccc6666a-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Besuchen Sie unser Juweliersgeschäft online",
+            "heading_size": "h1"
+          }
+        },
+        "1655717699ccc6666a-1": {
+          "type": "text",
+          "settings": {
+            "text": "Unsere Auswahl an Luxusuhren reicht von Patek Philippe über Grand Seiko, Jaeger Le Coultre und Breitling. Auch im Schmuckbereich bieten wir Ihnen eine große Auswahl der edelsten Hersteller von Wellendorff oder Messika, bis hin zu Meister und Schaffrath.",
+            "text_style": "body"
+          }
+        },
+        "1655717699ccc6666a-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Weiter zu kuhnle.de",
+            "button_link_1": "https://www.kuhnle.de",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "1655717699ccc6666a-0",
+        "1655717699ccc6666a-1",
+        "1655717699ccc6666a-2"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/kuhnle_storefront.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "165571727041338c94",
+    "1655716968a6dbd6a6",
+    "16557174384edf5fef",
+    "16557176994adf7047"
+  ]
+}
