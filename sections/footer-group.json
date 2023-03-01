@@ -16,7 +16,7 @@
           "type": "link_list",
           "settings": {
             "heading": "Rechtliches",
-            "menu": "footer"
+            "menu": "footer-1"
           }
         },
         "footer-2": {
@@ -35,11 +35,11 @@
       "settings": {
         "color_scheme": "background-1",
         "newsletter_enable": true,
-        "newsletter_heading": "Subscribe to our emails",
+        "newsletter_heading": "Abonnieren Sie unseren Newsletter und werden zuerst über begehrte Modelle informiert:",
         "enable_follow_on_shop": false,
         "show_social": true,
         "enable_country_selector": false,
-        "enable_language_selector": false,
+        "enable_language_selector": true,
         "payment_enable": true,
         "show_policy": false,
         "margin_top": 48,
