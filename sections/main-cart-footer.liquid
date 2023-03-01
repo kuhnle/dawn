@@ -38,21 +38,41 @@
                     </ul>
                   {%- endif -%}
                 </div>
-
-                <small class="tax-note caption-large rte">
-                  {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
-                    {{ 'sections.cart.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}
-                  {%- elsif cart.taxes_included -%}
-                    {{ 'sections.cart.taxes_included_but_shipping_at_checkout' | t }}
-                  {%- elsif shop.shipping_policy.body != blank -%}
-                    {{ 'sections.cart.taxes_and_shipping_policy_at_checkout_html' | t: link: shop.shipping_policy.url }}
-                  {%- else -%}
-                    {{ 'sections.cart.taxes_and_shipping_at_checkout' | t }}
-                  {%- endif -%}
-                </small>
+                <div style="width: 100%; text-align: right; display: block; margin: 10px 0">
+                  <small class="tax-note caption-large rte">
+                    {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
+                      {{ 'sections.cart.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                    {%- elsif cart.taxes_included -%}
+                      {{ 'sections.cart.taxes_included_but_shipping_at_checkout' | t }}
+                    {%- elsif shop.shipping_policy.body != blank -%}
+                      {{ 'sections.cart.taxes_and_shipping_policy_at_checkout_html' | t: link: shop.shipping_policy.url }}
+                    {%- else -%}
+                      {{ 'sections.cart.taxes_and_shipping_at_checkout' | t }}
+                    {%- endif -%}
+                  </small>                      
+                  <input style="float: none; vertical-align: middle" type="checkbox" required id="agb_check" />
+                  <p style="display: inline; float: none;" for="agree">
+                    <span class="agb-checker required" style="color: red">*</span>
+                     {{ 'general.custom_code.legal_cart_1' | t }}
+                    <a href="https://vintage.kuhnle.de/policies/refund-policy" style="text-decoration: underline">
+                      {{ 'general.custom_code.refund_policy' | t }}
+                    </a>
+                    {{ 'general.custom_code.legal_cart_2' | t }} 
+                    <a href="https://vintage.kuhnle.de/policies/terms-of-service" style="text-decoration: underline">
+                      {{ 'general.custom_code.terms_of_service' | t }}
+                    </a>
+                    {{ 'general.custom_code.legal_cart_3' | t }}
+                  </p>        
+                </div>
               </div>
             {%- else -%}
-              <div class="cart__ctas" {{ block.shopify_attributes }}>
+              <div id="placeholder_checkout" class="cart__ctas" style="cursor: not-allowed;"{{ block.shopify_attributes }}>
+                <div class="cart__checkout-button button button--secondary" disabled style="cursor: not-allowed; width:100%; margin-top:2px; margin-bottom:2px">
+                  {{ 'sections.cart.checkout' | t }}
+                </div>
+              </div>
+        
+              <div id="checkout_btn"  class="cart__ctas" {{ block.shopify_attributes }}>
                 <noscript>
                   <button type="submit" class="cart__update-button button button--secondary" form="cart">
                     {{ 'sections.cart.update' | t }}
@@ -143,3 +163,11 @@
   ]
 }
 {% endschema %}
+<script>
+  $("#placeholder_checkout").show();
+  $("#checkout_btn").hide();
+  $('#agb_check').click(function() {
+    $("#placeholder_checkout").toggle(!this.checked);
+    $("#checkout_btn").toggle(this.checked);
+});
+</script>
