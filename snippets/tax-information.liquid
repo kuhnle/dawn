@@ -1,7 +1,7 @@
 <div style="font-size:12px">
   {% if product.variants[0].taxable %}
-    {{'general.custom_code.is_taxable' | t }}
+    {{ 'general.custom_code.is_taxable' | t }}
   {% else %}
-    {{'general.custom_code.not_taxable' | t }}
+    {{ 'general.custom_code.not_taxable' | t }}
   {% endif %}
 </div>
