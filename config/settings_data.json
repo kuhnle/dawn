@@ -1,5 +1,8 @@
 {
-    "current": {
+  "current": {
+    "logo": "shopify:\/\/shop_images\/817-kuhnle_vintage_25ebe783-1747-4add-be44-b891a6165e76.png",
+    "logo_width": 150,
+    "favicon": "shopify:\/\/shop_images\/Feuerrad.png",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#3a3a3a",
     "gradient_accent_1": "",
@@ -83,19 +86,18 @@
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
     "accent_icons": "text",
-    "social_twitter_link": "https://twitter.com/Kuhnle",
-    "social_facebook_link": "https://www.facebook.com/JuwelierKuhnle/",
-    "social_pinterest_link": "",
-    "social_instagram_link": "https://www.instagram.com/kuhnle_vintage",
+    "social_facebook_link": "https:\/\/www.facebook.com\/JuwelierKuhnle\/",
+    "social_instagram_link": "https:\/\/www.instagram.com\/kuhnle_vintage",
+    "social_youtube_link": "https:\/\/www.youtube.com\/user\/JuwelierKuhnleKanal",
     "social_tiktok_link": "",
-    "social_tumblr_link": "",
+    "social_twitter_link": "https:\/\/twitter.com\/Kuhnle",
     "social_snapchat_link": "",
-    "social_youtube_link": "https://www.youtube.com/user/JuwelierKuhnleKanal",
+    "social_pinterest_link": "",
+    "social_tumblr_link": "",
     "social_vimeo_link": "",
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": true,
     "predictive_search_show_price": false,
-    "favicon": "shopify://shop_images/Feuerrad.png",
     "currency_code_enabled": true,
     "checkout_sidebar_background_color": "#3a3a3a",
     "checkout_button_color": "#3a3a3a",
@@ -115,19 +117,17 @@
         "block_order": [
           "announcement-bar-0"
         ],
-        "settings": {}
+        "settings": {
+        }
       },
       "header": {
         "type": "header",
         "settings": {
-          "color_scheme": "background-1",
-          "logo": "shopify://shop_images/817-kuhnle_vintage_25ebe783-1747-4add-be44-b891a6165e76.png",
-          "logo_width": 150,
           "logo_position": "middle-left",
           "menu": "main-menu",
           "menu_type_desktop": "dropdown",
           "show_line_separator": true,
-          "enable_sticky_header": true,
+          "color_scheme": "background-1",
           "margin_bottom": 0
         }
       },
@@ -152,7 +152,7 @@
             "type": "text",
             "settings": {
               "heading": "Anfahrt und Öffnungszeiten",
-              "subtext": "<p>Königstraße 141<br/>90762 Fürth</p><p><strong>Öffnungszeiten:<br/></strong>Montag: <br/>geschlossen<br/>Dienstag-Freitag: <br/>9:30-13:00 und 14:00-18:00 Uhr<br/>Samstag:<br/>9:30 - 15:00 Uhr<br/><strong>Faschingsdienstag 21.02.23 geschlossen</strong></p>"
+              "subtext": "<p>Königstraße 141<br\/>90762 Fürth<\/p><p><strong>Öffnungszeiten:<br\/><\/strong>Montag: <br\/>geschlossen<br\/>Dienstag-Freitag: <br\/>9:30-13:00 und 14:00-18:00 Uhr<br\/>Samstag:<br\/>9:30 - 15:00 Uhr<br\/><strong>Faschingsdienstag 21.02.23 geschlossen<\/strong><\/p>"
             }
           }
         },
@@ -177,7 +177,6 @@
       "main-password-header": {
         "type": "main-password-header",
         "settings": {
-          "logo_max_width": 100,
           "color_scheme": "background-1"
         }
       },
@@ -189,6 +188,7 @@
       }
     },
     "content_for_index": [
+
     ]
   },
   "presets": {
