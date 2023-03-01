@@ -94,8 +94,8 @@
         "padding_bottom": 12
       }
     },
-    "product-recommendations": {
-      "type": "product-recommendations",
+    "related-products": {
+      "type": "related-products",
       "settings": {
         "heading": "Das könnte Ihnen auch gefallen",
         "heading_size": "h2",
@@ -114,6 +114,6 @@
   },
   "order": [
     "main",
-    "product-recommendations"
+    "related-products"
   ]
 }
