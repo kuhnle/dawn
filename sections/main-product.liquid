@@ -54,12 +54,6 @@
     >
   {%- endif -%}
 
-  {% assign request_only = false %}
-  {% for t in product.tags %}
-    {%- if t contains 'anfragen' -%}
-      {% assign request_only = true %}
-    {%- endif -%}
-  {%- endfor -%}
 
   {% assign variant_images = product.images | where: 'attached_to_variant?', true | map: 'src' %}
 
@@ -319,7 +313,6 @@
               {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
             {%- when 'buy_buttons' -%}
               {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
-            <a class="button button--full-width button--secondary" onclick="requestQuote()" href="/pages/anfrage">{{ 'general.custom_code.submit_request' | t }}</a>
             {%- when 'rating' -%}
               {%- if product.metafields.reviews.rating.value != blank -%}
                 {% liquid
@@ -497,11 +490,6 @@
     <script src="{{ 'product-model.js' | asset_url }}" defer></script>
   {%- endif -%}
 
-   <script>
-    function requestQuote() {
-    	sessionStorage.setItem("rfqProduct", {{ product.vendor | json }} + " " + {{ product.title | json }} + " - SKU: " + {{ product.selected_or_first_available_variant.sku | json }});                            
-    }
-  </script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       function isIE() {

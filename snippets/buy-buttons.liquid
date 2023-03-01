@@ -10,6 +10,12 @@
   Usage:
   {% render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, show_pickup_availability: true %}
 {% endcomment %}
+{% assign request_only = false %}
+{% for t in product.tags %}
+  {%- if t contains 'anfragen' -%}
+    {% assign request_only = true %}
+  {%- endif -%}
+{%- endfor -%}
 <div {{ block.shopify_attributes }}>
   {%- if product != blank -%}
     <product-form class="product-form">
@@ -52,34 +58,44 @@
               assign quantity_rule_soldout = true
             endif
           -%}
-          <button
-            id = "ProductSubmitButton-{{ section_id }}"
-            type="submit"
-            name="add"
-            class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
-            {% if product.selected_or_first_available_variant.available == false or quantity_rule_soldout %}
-              disabled
-            {% endif %}
-          >
-            <span>
-              {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
-                {{ 'products.product.sold_out' | t }}
-              {%- else -%}
-                {{ 'products.product.add_to_cart' | t }}
-              {%- endif -%}
-            </span>
-            <div class="loading-overlay__spinner hidden">
-              <svg
-                aria-hidden="true"
-                focusable="false"
-                class="spinner"
-                viewBox="0 0 66 66"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-              </svg>
-            </div>
-          </button>
+          {% assign is_reserved = false %}
+          {% for t in product.tags %}
+            {%- if t contains 'reserviert' -%}
+              <span class="product-form__submit button--secondary button button--full-width" style="cursor: not-allowed; background:#D3D3D3">{{ 'general.custom_code.reserved_label' | t }}</span>
+              {% assign is_reserved = true %}
+            {%- endif -%}
+          {% endfor %}            
+          {%- if is_reserved == false and request_only == false -%}
+            <button
+              id = "ProductSubmitButton-{{ section_id }}"
+              type="submit"
+              name="add"
+              class="product-form__submit button button--full-width {% if block.settings.show_dynamic_checkout %}button--secondary{% else %}button--primary{% endif %}"
+              {% if product.selected_or_first_available_variant.available == false or quantity_rule_soldout %}
+                disabled
+              {% endif %}
+            >
+              <span>
+                {%- if product.selected_or_first_available_variant.available == false or quantity_rule_soldout -%}
+                  {{ 'products.product.sold_out' | t }}
+                {%- else -%}
+                  {{ 'products.product.add_to_cart' | t }}
+                {%- endif -%}
+              </span>
+              <div class="loading-overlay__spinner hidden">
+                <svg
+                  aria-hidden="true"
+                  focusable="false"
+                  class="spinner"
+                  viewBox="0 0 66 66"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                </svg>
+              </div>
+            </button>
+        {%- endif -%}
+        <a class="button button--full-width button--secondary" onclick="requestQuote()" href="/pages/anfrage">{{ 'general.custom_code.submit_request' | t }}</a>
           {%- if block.settings.show_dynamic_checkout -%}
             {{ form | payment_button }}
           {%- endif -%}
@@ -133,3 +149,8 @@
     <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
   {%- endif -%}
 </div>
+<script>
+  function requestQuote() {
+    sessionStorage.setItem("rfqProduct", {{ product.vendor | json }} + " " + {{ product.title | json }} + " - SKU: " + {{ product.selected_or_first_available_variant.sku | json }});                            
+  }
+</script>
