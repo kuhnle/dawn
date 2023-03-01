@@ -18,7 +18,9 @@
             {%- unless item.product.has_only_default_variant -%}
               {%- for option in item.options_with_values -%}
                 <div class="product-option">
+                  {% comment %}
                   <dt>{{ option.name }}: </dt>
+                  {% endcomment %}
                   <dd>{{ option.value }}</dd>
                 </div>
               {%- endfor -%}
