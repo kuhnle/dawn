@@ -75,6 +75,7 @@
         "enable_sticky_info": true,
         "gallery_layout": "thumbnail_slider",
         "media_size": "medium",
+        "constrain_to_viewport": true,
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
