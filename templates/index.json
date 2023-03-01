@@ -6,22 +6,22 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "Vintage Uhren und Schmuck aus Expertenhand",
             "heading_size": "h0"
           }
         },
-        "text": {
+        "12615e7f-4b05-4c56-a252-4d3dc40235d0": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "Sorgfältig ausgewählt und geprüft vom familiengeführten Juwelier Ihres Vertrauens",
             "text_style": "body"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
+            "button_label_1": "Jetzt entdecken",
+            "button_link_1": "shopify://collections",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -31,14 +31,15 @@
       },
       "block_order": [
         "heading",
-        "text",
+        "12615e7f-4b05-4c56-a252-4d3dc40235d0",
         "button"
       ],
       "settings": {
+        "image": "shopify://shop_images/uhr-am-handgelenk.jpg",
         "image_overlay_opacity": 40,
-        "image_height": "large",
+        "image_height": "small",
         "adapt_height_first_image": false,
-        "desktop_content_position": "bottom-center",
+        "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "background-1",
@@ -47,165 +48,282 @@
         "show_text_below": false
       }
     },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 0
-      }
-    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "color_scheme": "background-1",
-        "show_view_all": false,
-        "swipe_on_mobile": false,
-        "image_ratio": "adapt",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "columns_mobile": "2",
-        "padding_top": 28,
-        "padding_bottom": 36
-      }
-    },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        },
-        "product": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        },
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": ""
-          }
-        }
-      },
-      "block_order": [
-        "collection-0",
-        "product",
-        "collection-1"
-      ],
-      "settings": {
-        "heading": "Multimedia collage",
-        "heading_size": "h2",
-        "desktop_layout": "left",
-        "mobile_layout": "collage",
-        "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "title": "Unsere neuesten Certified Pre-Owned Uhren",
         "heading_size": "h1",
         "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "uhren",
+        "products_to_show": 4,
+        "columns_desktop": 4,
         "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
         "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 100,
+        "padding_bottom": 36
+      }
+    },
+    "1655022667ee3d322d": {
+      "type": "multicolumn",
+      "blocks": {
+        "16550226679f8d52b9-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Rolex_Submariner.webp",
+            "title": "Vintage-Uhren",
+            "text": "<p>Egal ob Rolex, Patek Philippe, Audemars Piguet oder Omega: Lassen Sie sich von unserer Auswahl der feinsten CPO-Uhren überzeugen. </p>",
+            "link_label": "Entdecken Sie unsere Uhren",
+            "link": "shopify://collections/uhren"
+          }
+        },
+        "16550226679f8d52b9-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Diamantring.webp",
+            "title": "Vintage-Schmuck",
+            "text": "<p>Zarte Perlen, feine Diamanten oder farbige Steine - gefasst in edlem Gold oder Platin: Unsere Ringe, Ketten und Armbänder verkörpern zeitlose Eleganz.</p>",
+            "link_label": "Entdecken Sie unseren Schmuck",
+            "link": "shopify://collections/schmuck"
+          }
+        },
+        "16f01ec5-75c1-4326-9e50-621ba8ad582e": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Birkin_Bag.webp",
+            "title": "Accessoires",
+            "text": "<p>Hermès, Louis Vuitton, Chanel - hochwertige Pre-loved Taschen und exklusive Accessoires ergänzen Ihren Auftritt.</p>",
+            "link_label": "Entdecken Sie unsere Accessoires",
+            "link": "shopify://collections/accessoires"
+          }
+        }
+      },
+      "block_order": [
+        "16550226679f8d52b9-0",
+        "16550226679f8d52b9-1",
+        "16f01ec5-75c1-4326-9e50-621ba8ad582e"
+      ],
+      "settings": {
+        "title": "Unsere Kategorien",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
     },
-    "multicolumn": {
+    "16549741844e097685": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Unsere Schmuck-Neuankömmlinge",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "schmuck",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 100,
+        "padding_bottom": 36
+      }
+    },
+    "1654974354e94fd353": {
+      "type": "image-with-text",
+      "blocks": {
+        "165497435428901d61-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Sie möchten uns etwas verkaufen?",
+            "heading_size": "h1"
+          }
+        },
+        "165497435428901d61-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Gerne begutachten wir Ihre Uhren, Schmuckstücke oder Altgold - Ihre Schätze sind bei uns in guten Händen.</p>",
+            "text_style": "body"
+          }
+        },
+        "165497435428901d61-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Ankauf",
+            "button_link": "shopify://pages/anfrage"
+          }
+        }
+      },
+      "block_order": [
+        "165497435428901d61-0",
+        "165497435428901d61-1",
+        "165497435428901d61-2"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Gold_pieces.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16550223500ce7f948": {
       "type": "multicolumn",
       "blocks": {
-        "column1": {
+        "165502235091fdb170-0": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify://shop_images/shopping-bag2_3M0k.png",
+            "title": "An- und Verkauf",
+            "text": "<p>Wir suchen und bieten Ihnen eine exquisite Auswahl an Uhren und Schmuck, stets zu fairen Preisen.</p>",
             "link_label": "",
             "link": ""
           }
         },
-        "column2": {
+        "165502235091fdb170-1": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify://shop_images/store-front_hPqS.png",
+            "title": "Persönliche Beratung",
+            "text": "<p>Vertrauen Sie 113 Jahren Erfahrung in der Juweliersbranche. Wir freuen uns über Ihren Besuch in unserem Laden!</p>",
             "link_label": "",
             "link": ""
           }
         },
-        "column3": {
+        "165502235091fdb170-2": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "image": "shopify://shop_images/zertifikat_klwJ.png",
+            "title": "Expertengutachten",
+            "text": "<p>Wir schätzen den Wert Ihrer kostbarsten Stücke bei Bedarf und erstellen Ihnen professionelle Gutachten für Versicherungen.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "5095f188-4e19-4b2c-9bd9-02258c382440": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/werkstatt_4lg5.png",
+            "title": "Meisterwerkstatt",
+            "text": "<p>Wir prüfen jede Uhr auf Herz und Nieren. Unsere zertifizierten Uhrmacher zeichnen sich aus durch absolute Präzision und ein Auge fürs Detail.</p>",
             "link_label": "",
             "link": ""
           }
         }
       },
       "block_order": [
-        "column1",
-        "column2",
-        "column3"
+        "165502235091fdb170-0",
+        "165502235091fdb170-1",
+        "165502235091fdb170-2",
+        "5095f188-4e19-4b2c-9bd9-02258c382440"
       ],
       "settings": {
-        "title": "",
+        "title": "Unser Service für Sie",
         "heading_size": "h1",
-        "image_width": "third",
+        "image_width": "full",
         "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false,
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Wer sind wir?",
+        "button_link": "shopify://pages/about-us",
         "color_scheme": "background-1",
         "columns_mobile": "1",
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "8db484ab-70f6-4b46-a584-f13d1c1fa136": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Unsere exklusiven pre-loved Accessoires",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "accessoires",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": true,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "16549769441e0b881a": {
+      "type": "apps",
+      "blocks": {
+        "e763947d-a125-4bb4-9f94-4ca7cc17d555": {
+          "type": "shopify://apps/instafeed-instagram-feed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 24,
+            "feed_width": 100,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "e763947d-a125-4bb4-9f94-4ca7cc17d555"
+      ],
+      "settings": {
+        "include_margins": true
       }
     }
   },
   "order": [
     "image_banner",
-    "rich_text",
     "featured_collection",
-    "collage",
-    "video",
-    "multicolumn"
+    "1655022667ee3d322d",
+    "16549741844e097685",
+    "1654974354e94fd353",
+    "16550223500ce7f948",
+    "8db484ab-70f6-4b46-a584-f13d1c1fa136",
+    "16549769441e0b881a"
   ]
 }
