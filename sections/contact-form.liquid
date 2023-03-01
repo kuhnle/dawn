@@ -71,6 +71,10 @@
         <input type="tel" id="ContactForm-phone" class="field__input" autocomplete="tel" name="contact[{{ 'templates.contact.form.phone' | t }}]" pattern="[0-9\-]*" value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}" placeholder="{{ 'templates.contact.form.phone' | t }}">
         <label class="field__label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
       </div>
+    <div class="field">
+        <input type="text" id="ContactForm-product" class="field__input" name="contact[{{ 'templates.contact.form.product' | t }}]" value="" placeholder="{{ 'templates.contact.form.product' | t }}">
+        <label class="field__label" for="ContactForm-product">{{ 'general.custom_code.request_product' | t }}</label>
+    </div>
       <div class="field">
         <textarea
           rows="10"
@@ -83,6 +87,10 @@
         </textarea>
         <label class="form__label field__label" for="ContactForm-body">{{ 'templates.contact.form.comment' | t }}</label>
       </div>
+      <div>
+      	<input type="checkbox" required>
+      	<p style="display:inline"><span style="color:red">*</span> {{ 'general.custom_code.legal_consent' | t }} <a href="/policies/privacy-policy">{{ 'general.custom_code.privacy_policy' | t }}</a>.</p>
+      </div>
       <div class="contact__button">
         <button type="submit" class="button">
           {{ 'templates.contact.form.send' | t }}
@@ -91,6 +99,14 @@
     {%- endform -%}
   </div>
 </div>
+<script>
+  $('document').ready(function(){
+  	let rfqProduct = sessionStorage.getItem("rfqProduct");
+  	rfqProduct = rfqProduct === null ? "" : rfqProduct;
+  	document.getElementById("ContactForm-product").value = rfqProduct;
+    sessionStorage.removeItem("rfqProduct");
+  });
+</script>
 
 {% schema %}
 {
