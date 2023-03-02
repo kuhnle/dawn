@@ -6,9 +6,193 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "3ce5b69a-5b72-45aa-9c91-1dabeff9e91f": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--17834285957385__3ce5b69a-5b72-45aa-9c91-1dabeff9e91f-1677758724e2c8572a-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Wie kann ich kaufen?",
+            "icon": "none",
+            "row_content": "<p>In unserem Online-Shop können Sie bequem das umfangreiche Angebot unseres Vintage-Segments erkunden und auch direkt erwerben. Möchten Sie unsere Uhren und Schmuckstücke vor dem Kauf begutachten, freuen wir uns über Ihren Besuch in unserem Geschäft in Fürth.<\/p>",
+            "page": ""
+          }
+        },
+        "template--17834285957385__3ce5b69a-5b72-45aa-9c91-1dabeff9e91f-1677758724e2c8572a-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Welche Zahlungsmöglichkeiten habe ich?",
+            "icon": "none",
+            "row_content": "<p>Über unseren Webshop können Sie via Vorkasse per Überweisung bezahlen. In unserem Ladengeschäft in Fürth akzeptieren wir Bargeld, Kreditkarten und EC-Karten. Bitte beachten Sie dabei das Tageslimit für Ihre elektronischen Karten. Die Höhe des Limits können Sie bei Ihrer Bank gegebenenfalls entsprechend erhöhen lassen. <br\/>Für alternative Zahlungsmöglichkeiten kontaktieren Sie uns einfach unter vintage@kuhnle.de<\/p>",
+            "page": ""
+          }
+        },
+        "template--17834285957385__3ce5b69a-5b72-45aa-9c91-1dabeff9e91f-1677758724e2c8572a-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Wie funktioniert der Versand?",
+            "icon": "none",
+            "row_content": "<p>Wir versenden Ihre Bestellung entsprechend versichert per UPS, FedEx oder DHL. Ab Bereitstellung der Bestellung und nach Übergabe an den Paketdienst dauert es in der Regel 1-2 Werktage, bis die Sendung bei Ihnen eintrifft. Über den Versand informieren wir Sie per E-Mail und lassen Ihnen die Sendungsdaten zur Nachverfolgung zukommen. Bitte sorgen Sie unbedingt dafür, dass Sie zum Zeitpunkt der Lieferung persönlich anwesend sind, um das Paket entgegennehmen zu können. Derzeit ist der Versand nur innerhalb Deutschlands und der EU möglich. Sollten Sie einen Versand außerhalb der EU wünschen kontaktieren Sie uns bitte unter: vintage@kuhnle.de<\/p>",
+            "page": ""
+          }
+        },
+        "template--17834285957385__3ce5b69a-5b72-45aa-9c91-1dabeff9e91f-1677758724e2c8572a-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Welche Rückgabebedingungen muss ich beachten?",
+            "icon": "none",
+            "row_content": "<p>Sollten Sie mit der gelieferten Ware nicht zufrieden sein oder diese aus anderen Gründen nicht behalten wollen, können Sie Ihren Kauf innerhalb einer Frist von 14 Tagen jederzeit widerrufen, indem Sie uns schriftlich kontaktieren. Gerne lassen wir Ihnen dann alle Retourenunterlagen zukommen, sodass Sie die Uhr oder den Schmuck wertversichert an uns zurücksenden können. Sie bekommen anschließend nach der Eingangskontrolle in unserer Werkstatt Ihren Kaufbetrag zurückerstattet.<\/p>",
+            "page": ""
+          }
+        },
+        "89f368ef-06cc-42fa-bc92-97abe6589268": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Werden die Stücke vor dem Verkauf geprüft?",
+            "icon": "none",
+            "row_content": "<p>Bei Kuhnle Vintage sind Sie immer auf der sicheren Seite. Wir garantieren, dass jedes, bei Kuhnle Vintage verkaufte Stück, eigenhändig von unseren Experten in der hauseigenen Meisterwerkstatt nach unserem Bewertungssystem geprüft und verifiziert wurde.<\/p>",
+            "page": "bewertungssystem"
+          }
+        },
+        "80a8548c-1124-4fef-903e-4279751ace33": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Kann das Amband einer gekauften Uhr angepasst werden?",
+            "icon": "none",
+            "row_content": "<p>Gerne passen wir Ihr Band bei einer persönlichen Abholung in unserem Ladengeschäft in Fürth an. Alternativ können Sie uns Ihren Handgelenksumfang bei Aufgabe der Bestellung angeben. Unsere Uhrmacher passen das Armband dann vor Versand auf Ihre Wunschgröße an.<\/p>",
+            "page": ""
+          }
+        },
+        "8b374215-c8f7-4603-a59d-a15f13b54c54": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Was sind CPO-Uhren?",
+            "icon": "none",
+            "row_content": "<p>CPO ist die Abkürzung für \"certified pre-owned\", ins Deutsche übertragen \"gebraucht mit Zertifikat\". Es handelt sich hier also um Uhren aus Vorbesitz, die von unseren erfahrenen Uhrmachern in der hauseigenen Meisterwerkstatt auf Authentizität und Funktion geprüft und zertifiziert worden sind.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17834285957385__3ce5b69a-5b72-45aa-9c91-1dabeff9e91f-1677758724e2c8572a-0",
+        "template--17834285957385__3ce5b69a-5b72-45aa-9c91-1dabeff9e91f-1677758724e2c8572a-1",
+        "template--17834285957385__3ce5b69a-5b72-45aa-9c91-1dabeff9e91f-1677758724e2c8572a-2",
+        "template--17834285957385__3ce5b69a-5b72-45aa-9c91-1dabeff9e91f-1677758724e2c8572a-3",
+        "89f368ef-06cc-42fa-bc92-97abe6589268",
+        "80a8548c-1124-4fef-903e-4279751ace33",
+        "8b374215-c8f7-4603-a59d-a15f13b54c54"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Einkauf",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "60e7194a-d12b-4b7e-97e1-257e9f1ee82e": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--17834285957385__60e7194a-d12b-4b7e-97e1-257e9f1ee82e-1677758724e2c8572a-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Wie kann ich verkaufen?",
+            "icon": "none",
+            "row_content": "<p>Vereinbaren Sie gerne einen Termin zur Begutachtung in unserem Laden oder nutzen Sie bequem das Ankaufsformular über die Navigationsleiste.<\/p>",
+            "page": ""
+          }
+        },
+        "template--17834285957385__60e7194a-d12b-4b7e-97e1-257e9f1ee82e-1677758724e2c8572a-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Was kann ich alles verkaufen?",
+            "icon": "none",
+            "row_content": "<p>Bei uns können Sie Schmuck und Uhren verkaufen. Wir sind immer auf der Suche nach besonderen Uhren und Schmuckstücken, um unsere umfassende Kollektion abwechslungsreich und aktuell zu halten. Sind Sie im Besitz einer solchen Uhr oder eines besonderen Schmuckstücks und möchten diese eventuell eintauschen oder verkaufen, dann können Sie jederzeit Kontakt mit uns aufnehmen. Stellen Sie einfach eine Anfrage über unser Kontaktformular und wir lassen Sie wissen, ob und gegebenenfalls zu welchem Preis ein Verkauf möglich ist (vorbehaltlich der finalen Prüfung der Stücke).<\/p>",
+            "page": ""
+          }
+        },
+        "template--17834285957385__60e7194a-d12b-4b7e-97e1-257e9f1ee82e-1677758724e2c8572a-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Kann ich auch Altgold verkaufen?",
+            "icon": "none",
+            "row_content": "<p>Gerne können Sie auch Ihr Altgold bei uns verkaufen.<br\/>Ob eine defekte Uhr oder ein defektes Armband, Goldbarren, Münzen oder auch Zahngold - wir bewerten Ihr Altgold professionell und machen Ihnen ein entsprechendes Angebot.<\/p>",
+            "page": ""
+          }
+        },
+        "template--17834285957385__60e7194a-d12b-4b7e-97e1-257e9f1ee82e-1677758724e2c8572a-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Welche Uhrenmarken kann ich verkaufen?",
+            "icon": "none",
+            "row_content": "<p>Wir konzentrieren uns hauptsächlich auf die Marken ROLEX, OMEGA, PATEK PHILIPPE, TUDOR, AUDEMARS PIGUET, IWC, HEUER, JAEGER-LECOULTRE, CARTIER und BREITLING. Gerne können Sie uns aber auch zu anderen Marken eine Anfrage über unser Kontaktformular zukommen lassen.<\/p>",
+            "page": ""
+          }
+        },
+        "bfb7b2cf-5bb2-4eec-b1c3-b6f7e570bdb2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Welche Optionen für den Verkauf stehen mir zur Verfügung?",
+            "icon": "none",
+            "row_content": "<p>Sie können Ihre Stücke in Zahlung geben, direkt, oder über eine Kommission verkaufen. Gerne beraten wir Sie, welche Verkaufs-Option am besten zu Ihrer Uhr oder Ihrem Schmuck und Ihren Anforderungen passt.<\/p>",
+            "page": ""
+          }
+        },
+        "72694d8c-8650-4bbe-8a76-ede78d85b366": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Wer schätzt meine Stücke?",
+            "icon": "none",
+            "row_content": "<p>Unsere Vintage-Expertin Kerstin Hermann schätzt Ihre Stücke nach unserem festgelegten Bewertungsystem, unter Berücksichtigung der aktuellen Marktlage. Nutzen Sie einfach unser Kontaktformular für eine erste grobe Einschätzung.<\/p>",
+            "page": "bewertungssystem"
+          }
+        },
+        "70888e02-e48e-4f1c-a25f-791ca0e65abc": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Kann ich für meinen Schmuck und\/oder meine Uhren auch ein Gutachten erstellen lassen?",
+            "icon": "none",
+            "row_content": "<p>Gerne erstellen wir Ihnen für Ihre Stücke ein Gutachten. Hierbei spielt es keine Rolle ob Sie ein Erbteilungswert- oder Wiederbeschaffungswert-Gutachten, z. B. für die Versicherung benötigen. Wir stehen Ihnen bei Bedarf als neutrale Instanz zur Verfügung und beantworten Ihre Fragen. Die Kosten für die Erstellung eines Gutachtens richten sich nach Aufwand und Umfang der zu bewertenden Stücke, gern erstellen wir Ihnen ein individuelles Angebot.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17834285957385__60e7194a-d12b-4b7e-97e1-257e9f1ee82e-1677758724e2c8572a-0",
+        "template--17834285957385__60e7194a-d12b-4b7e-97e1-257e9f1ee82e-1677758724e2c8572a-1",
+        "template--17834285957385__60e7194a-d12b-4b7e-97e1-257e9f1ee82e-1677758724e2c8572a-2",
+        "template--17834285957385__60e7194a-d12b-4b7e-97e1-257e9f1ee82e-1677758724e2c8572a-3",
+        "bfb7b2cf-5bb2-4eec-b1c3-b6f7e570bdb2",
+        "72694d8c-8650-4bbe-8a76-ede78d85b366",
+        "70888e02-e48e-4f1c-a25f-791ca0e65abc"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Verkauf",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "3ce5b69a-5b72-45aa-9c91-1dabeff9e91f",
+    "60e7194a-d12b-4b7e-97e1-257e9f1ee82e"
   ]
 }
