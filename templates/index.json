@@ -46,7 +46,7 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false,
-        "lazy_load": false
+        "loading": "eager"
       }
     },
     "featured_collection": {
