@@ -57,6 +57,10 @@
                   <label class="field__label" for="NewsletterForm--{{ section.id }}">
                     {{ 'newsletter.label' | t }}
                   </label>
+                  <button type="submit" class="button" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
+                    {{ 'general.custom_code.newsletter_footer_subscribe' | t }}
+                  </button>
+                  {% comment %}
                   <button
                     type="submit"
                     class="newsletter-form__button field__button"
@@ -66,6 +70,7 @@
                   >
                     {% render 'icon-arrow' %}
                   </button>
+                {% endcomment %}
                 </div>
                 {%- if form.errors -%}
                   <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
@@ -87,6 +92,7 @@
                 </h3>
               {%- endif -%}
             {% endform %}
+            <p class="footer-block-newsletter__legal-text" style="font-size:12px; line-height:1.5em">{{ 'general.custom_code.newsletter_footer_legal' | t }}
           </div>
       {%- endcase -%}
     {%- endfor -%}
