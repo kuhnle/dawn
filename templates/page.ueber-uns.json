@@ -13,7 +13,7 @@
         "1655717270382ab800-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Als einer der Top-Juweliere Deutschlands präsentieren wir in unserem traditionsreichen Geschäft in Fürth auch hochwertigen Schmuck und Uhren sowie Luxus-Accessoires mit Geschichte. Durch unsere einzigartige Auswahl, den kompetenten Service und die persönliche Beratung haben wir uns in der Vintage-Branche schnell einen Namen gemacht.<br/><br/>Für unsere Kunden sind wir stets auf der Suche nach dem Besonderen und höchster Qualität. Jedes unserer Vintage-Stücke wird in der hauseigenen, hoch spezialisierten und bestens ausgestatteten Meisterwerkstatt geprüft und verifiziert.</p>",
+            "text": "<p>Als einer der Top-Juweliere Deutschlands präsentieren wir in unserem traditionsreichen Geschäft in Fürth auch hochwertigen Schmuck und Uhren sowie Luxus-Accessoires mit Geschichte. Durch unsere einzigartige Auswahl, den kompetenten Service und die persönliche Beratung haben wir uns in der Vintage-Branche schnell einen Namen gemacht.<br\/><br\/>Für unsere Kunden sind wir stets auf der Suche nach dem Besonderen und höchster Qualität. Jedes unserer Vintage-Stücke wird in der hauseigenen, hoch spezialisierten und bestens ausgestatteten Meisterwerkstatt geprüft und verifiziert.<\/p>",
             "text_style": "body"
           }
         }
@@ -22,14 +22,14 @@
         "1655717270382ab800-1"
       ],
       "settings": {
-        "image": "shopify://shop_images/csm-kuhnle-bild-3-28fafd2e5c-12_9HmK.webp",
+        "image": "shopify:\/\/shop_images\/csm-kuhnle-bild-3-28fafd2e5c-12_9HmK.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "color_scheme": "background-1",
+        "color_scheme": "background-2",
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 0
@@ -41,7 +41,7 @@
         "1655716968562d05a1-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Auch wenn Sie Ihre Wertgegenstände zu marktgerechten Preisen verkaufen möchten oder ein Gutachten z.B. für die Versicherung benötigen, sind wir Ihr erster Ansprechpartner und beraten Sie gern.<br/></p><p>Im Jahr 2020 konnten wir Vintage-Expertin Kerstin „Kiki“ Hermann für unser Team gewinnen.<br/><br/>Durch die langjährige und umfangreiche Tätigkeit als Leiterin des Expertenzentrums sowie der Uhrenabteilung für ein renommiertes Auktionshaus in Süddeutschland, hatte sie die Möglichkeit ihre Expertise ständig zu erweitern und viel Erfahrung zu sammeln.<br/><br/>Wir freuen uns auf Ihren Besuch!</p>",
+            "text": "<p>Auch wenn Sie Ihre Wertgegenstände zu marktgerechten Preisen verkaufen möchten oder ein Gutachten z.B. für die Versicherung benötigen, sind wir Ihr erster Ansprechpartner und beraten Sie gern.<br\/><\/p><p>Im Jahr 2020 konnten wir Vintage-Expertin Kerstin „Kiki“ Hermann für unser Team gewinnen.<br\/><br\/>Durch die langjährige und umfangreiche Tätigkeit als Leiterin des Expertenzentrums sowie der Uhrenabteilung für ein renommiertes Auktionshaus in Süddeutschland, hatte sie die Möglichkeit ihre Expertise ständig zu erweitern und viel Erfahrung zu sammeln.<br\/><br\/>Wir freuen uns auf Ihren Besuch!<\/p>",
             "text_style": "body"
           }
         }
@@ -50,14 +50,14 @@
         "1655716968562d05a1-1"
       ],
       "settings": {
-        "image": "shopify://shop_images/kerstin-hermann_NpFU.webp",
+        "image": "shopify:\/\/shop_images\/kerstin-hermann_NpFU.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "color_scheme": "background-1",
+        "color_scheme": "background-2",
         "mobile_content_alignment": "left",
         "padding_top": 0,
         "padding_bottom": 36
@@ -93,7 +93,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Weiter zu kuhnle.de",
-            "button_link_1": "https://www.kuhnle.de",
+            "button_link_1": "https:\/\/www.kuhnle.de",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -107,10 +107,9 @@
         "1655717699ccc6666a-2"
       ],
       "settings": {
-        "image": "shopify://shop_images/kuhnle_storefront.jpg",
+        "image": "shopify:\/\/shop_images\/kuhnle_storefront.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
-        "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
