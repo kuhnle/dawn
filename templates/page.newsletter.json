@@ -10,17 +10,10 @@
     "adb96eb5-ed06-441a-933d-674492e36171": {
       "type": "newsletter",
       "blocks": {
-        "template--17836684542217__adb96eb5-ed06-441a-933d-674492e36171-167783741525e88e40-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Subscribe to our emails",
-            "heading_size": "h1"
-          }
-        },
         "template--17836684542217__adb96eb5-ed06-441a-933d-674492e36171-167783741525e88e40-1": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+            "text": "<p>Abonnieren Sie unseren Newsletter und werden zuerst über begehrte Modelle informiert:<\/p>"
           }
         },
         "template--17836684542217__adb96eb5-ed06-441a-933d-674492e36171-167783741525e88e40-2": {
@@ -30,7 +23,6 @@
         }
       },
       "block_order": [
-        "template--17836684542217__adb96eb5-ed06-441a-933d-674492e36171-167783741525e88e40-0",
         "template--17836684542217__adb96eb5-ed06-441a-933d-674492e36171-167783741525e88e40-1",
         "template--17836684542217__adb96eb5-ed06-441a-933d-674492e36171-167783741525e88e40-2"
       ],
