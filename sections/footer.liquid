@@ -170,8 +170,14 @@
                     <label class="field__label" for="NewsletterForm--{{ section.id }}">
                       {{ 'newsletter.label' | t }}
                     </label>
-                    <button type="submit" class="button" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
-                      {{ 'general.custom_code.newsletter_footer_subscribe' | t }}
+                    <button
+                      type="submit"
+                      class="newsletter-form__button field__button"
+                      name="commit"
+                      id="Subscribe"
+                      aria-label="{{ 'newsletter.button_label' | t }}"
+                    >
+                      {% render 'icon-arrow' %}
                     </button>
                   </div>
                   {%- if form.errors -%}
@@ -182,8 +188,7 @@
                   <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="ContactFooter-success" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
                 {%- endif -%}
               {%- endform -%}
-              <p class="footer-block-newsletter__legal-text" style="font-size:12px; line-height:1.5em">{{ 'general.custom_code.newsletter_footer_legal' | t }} <a href="/policies/privacy-policy">{{ 'general.custom_code.privacy_policy' | t }}</a></p>
-            </div>
+              </div>
           {%- endif -%}
 
           {%- if shop.features.follow_on_shop? and section.settings.enable_follow_on_shop -%}
