@@ -171,11 +171,13 @@
                       {{ 'newsletter.label' | t }}
                     </label>
                     <button
-                      type="submit"
+                      type="button"
                       class="newsletter-form__button field__button"
                       name="commit"
                       id="Subscribe"
                       aria-label="{{ 'newsletter.button_label' | t }}"
+                      onclick="newsletterRedirect()"
+                      href="/pages/newsletter"
                     >
                       {% render 'icon-arrow' %}
                     </button>
@@ -336,7 +338,11 @@
     </div>
   </div>
 </footer>
-
+<script>
+  function newsletterRedirect() {
+    sessionStorage.setItem("newsletter_mail", document.getElementById("NewsletterForm--{{ section.id }}").value);                            
+  }
+</script>
 {% javascript %}
   class LocalizationForm extends HTMLElement {
     constructor() {
