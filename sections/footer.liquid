@@ -180,7 +180,6 @@
                       name="commit"
                       id="Subscribe"
                       aria-label="{{ 'newsletter.button_label' | t }}"
-                      href="/pages/newsletter"
                       onclick="newsletterRedirect()"
                     >
                       {% render 'icon-arrow' %}
@@ -343,7 +342,8 @@
 </footer>
 <script>
   function newsletterRedirect() {
-    sessionStorage.setItem("newsletter_mail", document.getElementById("NewsletterForm--{{ section.id }}").value);                            
+    sessionStorage.setItem("newsletter_mail", document.getElementById("NewsletterForm--{{ section.id }}").value);
+    window.location.href='/pages/newsletter';                            
   }
 </script>
 {% javascript %}
