@@ -147,7 +147,7 @@
               {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
               {%- endform -%}
               {% endcomment %}
-              <form method="post" id="ContactFooter" accept-charset="UTF-8" class="footer__newsletter newsletter-form" onsubmit="sessionStorage.setItem('newsletter_mail', document.getElementById('NewsletterForm--{{ section.id }}').value);">
+              <form method="post" action="/pages/newsletter" id="ContactFooter" accept-charset="UTF-8" class="footer__newsletter newsletter-form" onsubmit="sessionStorage.setItem('newsletter_mail', document.getElementById('NewsletterForm--{{ section.id }}').value);">
                 <input type="hidden" name="contact[tags]" value="newsletter">
                 <div class="newsletter-form__field-wrapper">
                   <div class="field">
@@ -180,7 +180,6 @@
                       name="commit"
                       id="Subscribe"
                       aria-label="{{ 'newsletter.button_label' | t }}"
-                      href="/pages/newsletter" 
                     >
                       {% render 'icon-arrow' %}
                     </button>
