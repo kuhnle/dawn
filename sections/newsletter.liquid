@@ -101,6 +101,14 @@
     {%- endfor -%}
   </div>
 </div>
+<script>
+  $('document').ready(function(){
+  	let mail = sessionStorage.getItem("newsletter_mail");
+  	mail = mail === null ? "" : mail;
+  	document.getElementById("NewsletterForm--{{ section.id }}").value = mail;
+    sessionStorage.removeItem("newsletter_mail");
+  });
+</script>
 
 {% schema %}
 {
