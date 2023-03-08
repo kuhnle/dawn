@@ -147,7 +147,7 @@
               {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
               {%- endform -%}
               {% endcomment %}
-              <form method="post" action="/pages/newsletter" id="ContactFooter" accept-charset="UTF-8" class="footer__newsletter newsletter-form" onsubmit="sessionStorage.setItem('newsletter_mail', document.getElementById('NewsletterForm--{{ section.id }}').value);">
+              
                 <input type="hidden" name="contact[tags]" value="newsletter">
                 <div class="newsletter-form__field-wrapper">
                   <div class="field">
@@ -180,6 +180,8 @@
                       name="commit"
                       id="Subscribe"
                       aria-label="{{ 'newsletter.button_label' | t }}"
+                      href="/pages/newsletter"
+                      onclick="newsletterRedirect()"
                     >
                       {% render 'icon-arrow' %}
                     </button>
@@ -191,7 +193,6 @@
                 {%- if form.posted_successfully? -%}
                   <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="ContactFooter-success" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
                 {%- endif -%}
-              </form>
               <p class="footer-block-newsletter__legal-text" style="font-size:12px; line-height:1.5em">{{ 'general.custom_code.newsletter_redirection' | t }}</p>
               </div>
           {%- endif -%}
