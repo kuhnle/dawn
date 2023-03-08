@@ -91,8 +91,11 @@
                   {{- 'newsletter.success' | t }}
                 </h3>
               {%- endif -%}
+              <div>
+                <input type="checkbox" required>
+                <p style="display:inline"><span style="color:red">*</span> {{ 'general.custom_code.newsletter_footer_legal' | t }} <a href="/policies/privacy-policy">{{ 'general.custom_code.privacy_policy' | t }}</a></p>
+              </div>
             {% endform %}
-            <p class="footer-block-newsletter__legal-text" style="font-size:12px; line-height:1.5em; max-width: 40em; margin: auto; margin-top: 1em; text-align:left;">{{ 'general.custom_code.newsletter_footer_legal' | t }} <a href="/policies/privacy-policy">{{ 'general.custom_code.privacy_policy' | t }}</a></p>
           </div>
       {%- endcase -%}
     {%- endfor -%}
