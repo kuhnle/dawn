@@ -178,7 +178,7 @@
           "type": "button",
           "settings": {
             "button_label": "Ankauf",
-            "button_link": "shopify:\/\/pages\/anfrage"
+            "button_link": "shopify:\/\/pages\/ankauf"
           }
         }
       },
