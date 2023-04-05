@@ -160,13 +160,19 @@
   const placeholderCheckout = document.getElementById("placeholder_checkout");
   const checkoutBtn = document.getElementById("checkout_btn");
 
+  defaults();
+
   agbCheck.addEventListener("click", function() {
     if (this.checked) {
       placeholderCheckout.style.display = "block";
       checkoutBtn.style.display = "none";
     } else {
-      placeholderCheckout.style.display = "none";
-      checkoutBtn.style.display = "block";
+      defaults();
     }
   });
+
+  function defaults() {
+    placeholderCheckout.style.display = "none";
+    checkoutBtn.style.display = "block";
+  }
 </script>
