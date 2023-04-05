@@ -156,10 +156,12 @@
 }
 {% endschema %}
 <script>
-  $("#placeholder_checkout").show();
-  $("#checkout_btn").hide();
-  $('#agb_check').click(function() {
-    $("#placeholder_checkout").toggle(!this.checked);
-    $("#checkout_btn").toggle(this.checked);
-});
+  $(document).ready(function(){
+    $("#placeholder_checkout").show();
+    $("#checkout_btn").hide();
+    $('#agb_check').click(function() {
+      $("#placeholder_checkout").toggle(!this.checked);
+      $("#checkout_btn").toggle(this.checked);
+    });
+  });
 </script>
