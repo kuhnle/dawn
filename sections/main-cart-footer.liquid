@@ -155,13 +155,18 @@
   ]
 }
 {% endschema %}
-<script>
-  $(document).ready(function(){
-    $("#placeholder_checkout").show();
-    $("#checkout_btn").hide();
-    $('#agb_check').click(function() {
-      $("#placeholder_checkout").toggle(!this.checked);
-      $("#checkout_btn").toggle(this.checked);
-    });
+<script> 
+  const agbCheck = document.getElementById("agb_check");
+  const placeholderCheckout = document.getElementById("placeholder_checkout");
+  const checkoutBtn = document.getElementById("checkout_btn");
+
+  agbCheck.addEventListener("click", function() {
+    if (this.checked) {
+      placeholderCheckout.style.display = "block";
+      checkoutBtn.style.display = "none";
+    } else {
+      placeholderCheckout.style.display = "none";
+      checkoutBtn.style.display = "block";
+    }
   });
 </script>
