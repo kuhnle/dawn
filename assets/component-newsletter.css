@@ -34,6 +34,7 @@
 
 .newsletter-form__message--success {
   margin-top: 2rem;
+  line-height: 1.5;
 }
 
 @media screen and (min-width: 750px) {
