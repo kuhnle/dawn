@@ -41,30 +41,30 @@
     </div>
   </div>
 </div>
-<script>// <![CDATA[
-var triggered = false;
-  $(window).scroll(function () {
-    var hT = $("#trigger").offset().top,
-      hH = $("#trigger").outerHeight(),
-      wH = $(window).height(),
-      wS = $(this).scrollTop();
+<script>
+  var triggered = false;
+  window.addEventListener("scroll", function() {
+    var trigger = document.getElementById("trigger");
+    var counts = document.querySelectorAll(".count");
+    var hT = trigger.offsetTop,
+        hH = trigger.offsetHeight,
+        wH = window.innerHeight,
+        wS = window.pageYOffset;
     if (wS > hT + hH - wH) {
-      if (triggered == false) {
-        $(".count").each(function () {
+      if (!triggered) {
+        counts.forEach(function(count) {
           triggered = true;
-          var $this = $(this);
-          jQuery({ Counter: 0 }).animate(
-            { Counter: $this.attr("data-stop") },
-            {
-              duration: 2000,
-              easing: "swing",
-              step: function (now) {
-                $this.text(Math.ceil(now));
-              },
+          var stopCount = count.getAttribute("data-stop");
+          var Counter = 0;
+          var animateCount = setInterval(function() {
+            Counter++;
+            count.innerText = Math.ceil(Counter);
+            if (Counter == stopCount) {
+              clearInterval(animateCount);
             }
-          );
+          }, 20);
         });
       }
     }
   });
-// ]]></script>
+</script>

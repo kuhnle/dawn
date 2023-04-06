@@ -102,7 +102,7 @@
   </div>
 </div>
 <script>
-  $('document').ready(function(){
+  document.addEventListener("DOMContentLoaded", () => {
   	let mail = sessionStorage.getItem("newsletter_mail");
   	mail = mail === null ? "" : mail;
   	document.getElementById("NewsletterForm--{{ section.id }}").value = mail;

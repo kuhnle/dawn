@@ -135,7 +135,7 @@
   </div>
 </div>
 <script>
-  $('document').ready(function(){
+  document.addEventListener("DOMContentLoaded", () => {
   	let rfqProduct = sessionStorage.getItem("rfqProduct");
   	rfqProduct = rfqProduct === null ? "" : rfqProduct;
   	document.getElementById("ContactForm-product").value = rfqProduct;
