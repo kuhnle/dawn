@@ -308,7 +308,7 @@
           "settings": {
             "heading_size": 30,
             "feed_width": 100,
-            "html_area": "<script>\n      const elements = document.getElementsByClassName('insta-feed h2');\n      for (let i = 0; i < elements.length; i++) {\n        elements[i].classList.add('title', 'inline-richtext', 'h1');\n        elements[i].classList.remove('instafeed', 'h2');\n      }\n<\/script>"
+            "html_area": ""
           }
         }
       },
