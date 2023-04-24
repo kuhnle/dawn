@@ -306,9 +306,9 @@
         "e763947d-a125-4bb4-9f94-4ca7cc17d555": {
           "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
-            "heading_size": 24,
+            "heading_size": 30,
             "feed_width": 100,
-            "html_area": ""
+            "html_area": "<script>\n      const elements = document.getElementsByClassName('insta-feed h2');\n      for (let i = 0; i < elements.length; i++) {\n        elements[i].classList.add('title', 'inline-richtext', 'h1');\n        elements[i].classList.remove('instafeed', 'h2');\n      }\n<\/script>"
           }
         }
       },
