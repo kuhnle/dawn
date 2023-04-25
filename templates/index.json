@@ -300,6 +300,29 @@
         "padding_bottom": 36
       }
     },
+    "09be93cb-624e-4881-8d8c-2f683a213000": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17832272265481__09be93cb-624e-4881-8d8c-2f683a213000-168234711494d3a08f-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Entdecken Sie uns auf Instagram",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "template--17832272265481__09be93cb-624e-4881-8d8c-2f683a213000-168234711494d3a08f-0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "16549769441e0b881a": {
       "type": "apps",
       "blocks": {
@@ -328,6 +351,7 @@
     "1654974354e94fd353",
     "16550223500ce7f948",
     "8db484ab-70f6-4b46-a584-f13d1c1fa136",
+    "09be93cb-624e-4881-8d8c-2f683a213000",
     "16549769441e0b881a"
   ]
 }
