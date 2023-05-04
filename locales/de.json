@@ -57,6 +57,7 @@
       "dial": "Zifferblatt",
       "type": "Typ",
       "calibre": "Werk",
+      "complications": "Komplikationen",
       "strap": "Armband",
       "watch_case": "Gehäuse",
       "material": "Material",
@@ -70,7 +71,7 @@
       "login_form_password_placeholder": "Ihr Passwort",
       "login_form_error": "Falsches Passwort!",
       "login_form_submit": "Eingeben",
-      "admin_link_html": "Bist du der Shop-Inhaber? <a href=\"\/admin\" class=\"link underlined-link\">Hier einloggen<\/a>",
+      "admin_link_html": "Bist du der Shop-Inhaber? <a href=\"/admin\" class=\"link underlined-link\">Hier einloggen</a>",
       "powered_by_shopify_html": "Made with ♥ by Philipp-Michael Handke"
     },
     "social": {
@@ -181,7 +182,7 @@
         "minimum_of": "Mindestens {{ quantity }}",
         "maximum_of": "Maximal {{ quantity }}",
         "multiples_of": "In {{ quantity }}er Schritten",
-        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}<\/span> im Warenkorb"
+        "in_cart_html": "<span class=\"quantity-cart\">{{ quantity }}</span> im Warenkorb"
       },
       "price": {
         "from_price_html": "Von {{ price }}",
@@ -217,7 +218,7 @@
       },
       "view_full_details": "Vollständige Details anzeigen",
       "include_taxes": "inkl. MwSt.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Versand<\/a> wird beim Checkout berechnet",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Versand</a> wird beim Checkout berechnet",
       "choose_options": "Optionen auswählen",
       "choose_product_options": "Optionen für {{ product_name }} auswählen",
       "value_unavailable": "{{ option_value }} – nicht verfügbar",
@@ -346,9 +347,9 @@
       "empty": "Ihr Warenkorb ist leer",
       "cart_error": "Beim Aktualisieren Ihres Warenkorbs ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut.",
       "cart_quantity_error_html": "Sie können Ihrem Warenkorb nur {{ quantity }} Stück dieses Artikels hinzufügen.",
-      "taxes_and_shipping_policy_at_checkout_html": "Inklusive MwSt. Bei Artikeln, die nach § 25a UStG unter die Differenzbesteuerung fallen wird die Mehrwertsteuer auf der Rechnung nicht separat ausgewiesen. <a href=\"{{ link }}\">Versand<\/a> wird beim Checkout berechnet",
+      "taxes_and_shipping_policy_at_checkout_html": "Inklusive MwSt. Bei Artikeln, die nach § 25a UStG unter die Differenzbesteuerung fallen wird die Mehrwertsteuer auf der Rechnung nicht separat ausgewiesen. <a href=\"{{ link }}\">Versand</a> wird beim Checkout berechnet",
       "taxes_included_but_shipping_at_checkout": "Inklusive Steuern, Versand wird beim Checkout berechnet",
-      "taxes_included_and_shipping_policy_html": "Inklusive Steuern. <a href=\"{{ link }}\">Versand <\/a> wird beim Checkout berechnet",
+      "taxes_included_and_shipping_policy_html": "Inklusive Steuern. <a href=\"{{ link }}\">Versand </a> wird beim Checkout berechnet",
       "taxes_and_shipping_at_checkout": "Steuern und Versand werden beim Checkout berechnet",
       "headings": {
         "product": "Produkt",
@@ -360,7 +361,7 @@
       "update": "Aktualisieren",
       "login": {
         "title": "Haben Sie ein Konto?",
-        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Loggen Sie sich ein<\/a>, damit es beim Checkout schneller geht."
+        "paragraph_html": "<a href=\"{{ link }}\" class=\"link underlined-link\">Loggen Sie sich ein</a>, damit es beim Checkout schneller geht."
       }
     },
     "footer": {
@@ -381,7 +382,7 @@
     "collection_template": {
       "title": "Kategorie",
       "empty": "Keine Produkte gefunden",
-      "use_fewer_filters_html": "Verwenden Sie weniger Filter oder <a class=\"{{ class }}\" href=\"{{ link }}\">alle entfernen<\/a>"
+      "use_fewer_filters_html": "Verwenden Sie weniger Filter oder <a class=\"{{ class }}\" href=\"{{ link }}\">alle entfernen</a>"
     },
     "video": {
       "load_video": "Video laden: {{ description }}"
@@ -407,10 +408,10 @@
     }
   },
   "localization": {
-    "country_label": "Land\/Region",
+    "country_label": "Land/Region",
     "language_label": "Sprache",
     "update_language": "Sprache aktualisieren",
-    "update_country": "Land\/Region aktualisieren"
+    "update_country": "Land/Region aktualisieren"
   },
   "customer": {
     "account": {
@@ -439,8 +440,8 @@
       "address1": "Adresse 1",
       "address2": "Adresse 2",
       "city": "Ort",
-      "country": "Land\/Region",
-      "province": "Bundesland\/Provinz",
+      "country": "Land/Region",
+      "province": "Bundesland/Provinz",
       "zip": "PLZ",
       "phone": "Telefonnummer",
       "set_default": "Als Standard-Adresse festlegen",
@@ -577,10 +578,10 @@
       "order_summary": {
         "title": "Zusammenfassung Ihrer Bestellung",
         "discount_already_applied": "Auf diese Bestellung wurde ein Rabatt gewährt. Sie können keinen weiteren Rabatt hinzufügen.",
-        "cart_does_not_meet_discount_requirements_notice": "Der Rabattcode <strong style=\"text-transform:uppercase\">{{ code }}<\/strong> ist für die Artikel in Ihrem Warenkorb nicht gültig",
-        "discount_requires_customer_notice": "Geben Sie Ihre Versandinformationen ein, um den Rabattcode <strong style=\"text-transform:uppercase\">{{ code }}<\/strong> zu übernehmen",
-        "customer_does_not_meet_discount_requirements_notice": "Der Rabattcode <strong style=\"text-transform:uppercase\">{{ code }}<\/strong> ist derzeit für Sie nicht verfügbar",
-        "shipping_information_does_not_meet_discount_requirements_notice": "Der Rabattcode <strong style=\"text-transform:uppercase\">{{ code }}<\/strong> ist für Ihre Lieferadresse nicht verfügbar",
+        "cart_does_not_meet_discount_requirements_notice": "Der Rabattcode <strong style=\"text-transform:uppercase\">{{ code }}</strong> ist für die Artikel in Ihrem Warenkorb nicht gültig",
+        "discount_requires_customer_notice": "Geben Sie Ihre Versandinformationen ein, um den Rabattcode <strong style=\"text-transform:uppercase\">{{ code }}</strong> zu übernehmen",
+        "customer_does_not_meet_discount_requirements_notice": "Der Rabattcode <strong style=\"text-transform:uppercase\">{{ code }}</strong> ist derzeit für Sie nicht verfügbar",
+        "shipping_information_does_not_meet_discount_requirements_notice": "Der Rabattcode <strong style=\"text-transform:uppercase\">{{ code }}</strong> ist für Ihre Lieferadresse nicht verfügbar",
         "no_pickup_location": "Ihre Bestellung ist nicht zur Abholung verfügbar. Bitte geben Sie eine Lieferadresse ein.",
         "gift_card_subscriptions_notice": "Geschenkgutscheine werden nur für Ihre erste Zahlung gültig sein",
         "estimated_taxes_finalization_tooltip_content": "Die endgültige Steuer und der Gesamtbetrag werden per E-Mail oder SMS bestätigt, nachdem Sie die Bestellung aufgegeben haben.",
@@ -606,7 +607,7 @@
         "card_verification_value_explanation": "Ein dreistelliger Sicherheitscode, der sich in der Regel auf der Rückseite Ihrer Karte befindet. American Express-Karten haben einen vierstelligen Code auf der Vorderseite.",
         "card_verification_value_explanation_amex": "4-stelliger Sicherheitscode auf der Vorderseite Ihrer Karte",
         "card_verification_value_explanation_other": "3-stelliger Sicherheitscode auf der Rückseite Ihrer Karte",
-        "free_order_notice_html": "Ihre Bestellung ist <strong>kostenlos<\/strong>. Keine Zahlung notwendig.",
+        "free_order_notice_html": "Ihre Bestellung ist <strong>kostenlos</strong>. Keine Zahlung notwendig.",
         "express_checkout_free_order": "Für eine kostenlose Bestellung wird Ihnen nichts in Rechnung gestellt",
         "offsite_gateway_redirect_hint": "Nachdem Sie “{{ button_label }}” geklickt haben, werden Sie zu {{ gateway_label }} weitergeleitet, um Ihren Einkauf sicher abzuschließen.",
         "billing_address_description": "Wählen Sie die mit Ihrer Karte oder Zahlungsmethode verknüpfte Adresse aus.",
@@ -631,8 +632,8 @@
           "other": "Ihre Bestellung wird von Ihren Gutscheinen abgedeckt."
         },
         "card_fields_unavailable_html": {
-          "one": "Kredit- und Debitkartenzahlungen sind momentan nicht verfügbar.<br>Bitte <a href=\"{{ current_url }}\">laden Sie diese Seite neu<\/a> oder versuchen Sie es später noch einmal.",
-          "other": "Kredit- und Debitkartenzahlungen sind momentan nicht verfügbar.<br>Bitte <a href=\"{{ current_url }}\">laden Sie diese Seite neu<\/a> oder probieren Sie eine andere Zahlungsmethode."
+          "one": "Kredit- und Debitkartenzahlungen sind momentan nicht verfügbar.<br>Bitte <a href=\"{{ current_url }}\">laden Sie diese Seite neu</a> oder versuchen Sie es später noch einmal.",
+          "other": "Kredit- und Debitkartenzahlungen sind momentan nicht verfügbar.<br>Bitte <a href=\"{{ current_url }}\">laden Sie diese Seite neu</a> oder probieren Sie eine andere Zahlungsmethode."
         },
         "paypal": {
           "connect": "Klicken Sie hier, um Ihr PayPal-Konto zu verbinden"
@@ -644,7 +645,7 @@
         "google": {
           "connect": "Hier klicken, um sich mit Ihrem Google Pay-Konto zu verbinden"
         },
-        "purchase_options_card_update_agreement_label_html": "Indem Sie Ihre Zahlungsmethode aktualisieren, autorisieren Sie Zahlungen für wiederkehrende oder ausstehende Käufe gemäß der <a class=\"link--small\" data-modal=\"true\" data-title-text=\"{{ cancellation_policy }}\" href=\"{{ policy_href }}\">Stornierungsrichtlinie<\/a> dieses Shops."
+        "purchase_options_card_update_agreement_label_html": "Indem Sie Ihre Zahlungsmethode aktualisieren, autorisieren Sie Zahlungen für wiederkehrende oder ausstehende Käufe gemäß der <a class=\"link--small\" data-modal=\"true\" data-title-text=\"{{ cancellation_policy }}\" href=\"{{ policy_href }}\">Stornierungsrichtlinie</a> dieses Shops."
       },
       "marketing": {
         "accept_marketing_checkbox_label": "Ich möchte regelmäßig über neue Uhren, Schmuck, Accessories und Events durch unseren hauseigenen Mail-Newsletter informiert werden. Diese Einwilligung kann jederzeit über die Kontaktdaten in unserer Datenschutzerklärung oder am Ende jeder E-Mail widerrufen werden.",
@@ -672,9 +673,9 @@
         "address_address1_blank": "Geben Sie einen Adresse ein",
         "address_address2_blank": "Geben Sie eine Wohnung, ein Zimmer usw. ein",
         "address_city_blank": "Geben Sie einen Stadt ein",
-        "address_country_blank": "Wählen Sie ein Land\/eine Region aus",
+        "address_country_blank": "Wählen Sie ein Land/eine Region aus",
         "address_country_not_supported": "Wir versenden nicht an dieses Land oder diese Region. Geben Sie eine neue Lieferadresse ein und versuchen Sie es erneut.",
-        "address_province_blank": "Wählen Sie ein Bundesland\/einen Kanton aus",
+        "address_province_blank": "Wählen Sie ein Bundesland/einen Kanton aus",
         "address_company_blank": "Geben Sie einen Unternehmensnamen ein",
         "address_phone_blank": "Geben Sie eine gültige Telefonnummer ein",
         "address_zip_blank": "Geben Sie eine Postleitzahl ein",
@@ -907,25 +908,25 @@
     "email_marketing": {
       "open_tracking": {
         "opt_out": {
-          "opted_out_html": "<b>Sie haben das Tracking geöffneter E-Mails deaktiviert.<\/b>",
+          "opted_out_html": "<b>Sie haben das Tracking geöffneter E-Mails deaktiviert.</b>",
           "visibility": "Wir können nicht sehen, ob Sie unsere E-Mails geöffnet haben.",
-          "opt_in_html": "<a style='text-decoration:underline;' href='{{ link }}'>Aktivieren Sie<\/a> das Tracking geöffneter E-Mails.",
+          "opt_in_html": "<a style='text-decoration:underline;' href='{{ link }}'>Aktivieren Sie</a> das Tracking geöffneter E-Mails.",
           "preview_bar": "Sie sehen eine Vorschau dessen, was Kunden angezeigt wird, wenn sie die Nachverfolgung geöffneter E-Mails deaktivieren."
         },
         "no_longer_track": {
-          "status_html": "<b>Wir verfolgen nicht mehr nach, ob Sie E-Mails öffnen.<\/b>"
+          "status_html": "<b>Wir verfolgen nicht mehr nach, ob Sie E-Mails öffnen.</b>"
         },
         "track": {
           "visibility": "Wir sehen nur als Teil der zusammengefassten E-Mail-Öffnungsrate, ob Sie die E-Mail geöffnet haben."
         },
         "updated_policy": {
           "visibility": "Wir haben unsere Datenschutzerklärung aktualisiert und verfolgen geöffnete E-Mails nach. E-Mail-Öffnungsraten werden anonym aufgezeichnet. Wir sehen nur als Teil der zusammengefassten E-Mail-Öffnungsrate, ob Sie eine E-Mail geöffnet haben.",
-          "opt_out_html": "Wenn Sie diese Informationen nicht teilen möchten, können Sie das <a style='text-decoration:underline;' href='{{ link }}'>Abonnement kündigen<\/a>."
+          "opt_out_html": "Wenn Sie diese Informationen nicht teilen möchten, können Sie das <a style='text-decoration:underline;' href='{{ link }}'>Abonnement kündigen</a>."
         },
         "opt_in": {
-          "opted_in_html": "<b>Sie haben das Tracking geöffneter E-Mails aktiviert.<\/b>",
+          "opted_in_html": "<b>Sie haben das Tracking geöffneter E-Mails aktiviert.</b>",
           "visibility": "E-Mail-Öffnungsraten werden anonym aufgezeichnet. Wir sehen nur als Teil einer zusammengefassten E-Mail-Öffnungsrate, ob Sie eine E-Mail geöffnet haben.",
-          "opt_out_html": "Sie können das Tracking geöffneter E-Mails <a style='text-decoration:underline;' href='{{ link }}'>deaktivieren<\/a>, wenn Sie diese Informationen nicht teilen möchten.",
+          "opt_out_html": "Sie können das Tracking geöffneter E-Mails <a style='text-decoration:underline;' href='{{ link }}'>deaktivieren</a>, wenn Sie diese Informationen nicht teilen möchten.",
           "preview_bar": "Sie sehen eine Vorschau dessen, was Kunden angezeigt wird, wenn sie die Nachverfolgung geöffneter E-Mails aktivieren."
         }
       },
@@ -945,7 +946,7 @@
     },
     "errors": {
       "verify_email": "Wir haben eine E-Mail an {{ customer_email }} geschickt, bitte klicken Sie auf den enthaltenen Link, um Ihre E-Mail-Adresse zu bestätigen.",
-      "reset_password_html": "Diese E-Mail Adresse ist bereits vergeben. Wenn es sich um dein Benutzerkonto handelt können Sie <a href=\"\/account\/login#recover\">ein neues Passwort anfordern<\/a>",
+      "reset_password_html": "Diese E-Mail Adresse ist bereits vergeben. Wenn es sich um dein Benutzerkonto handelt können Sie <a href=\"/account/login#recover\">ein neues Passwort anfordern</a>",
       "full_name_required": "Geben Sie Vor- und Nachnamen ein.",
       "credit_card_session_expired": "Die Kreditkartenautorisierung ist abgelaufen, bitte geben Sie Ihre Zahlungsinformationen erneut ein. Ihre Karte wurde nicht belastet."
     },

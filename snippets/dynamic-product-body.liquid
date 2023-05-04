@@ -1,230 +1,264 @@
-<table class="table-product-metadata">
-    <tbody>
-      <tr>
-        <td>{{ 'general.product_metafields.brand' | t | upcase }}</td>
-        <td>{{ product.metafields.my_fields.brand }}<br /></td>
-      </tr>
-  
-      {% unless product.metafields.my_fields.model == NIL %}
+<table class='table-product-metadata'>
+  <tbody>
+    <tr>
+      <td>{{ 'general.product_metafields.brand' | t | upcase }}</td>
+      <td>
+        {{ product.metafields.my_fields.brand -}}
+        <br>
+      </td>
+    </tr>
+
+    {% unless product.metafields.my_fields.model == NIL %}
       <tr>
         <td>{{ 'general.product_metafields.model' | t | upcase }}</td>
-        <td>{{ product.metafields.my_fields.model }}<br /></td>
+        <td>
+          {{ product.metafields.my_fields.model -}}
+          <br>
+        </td>
       </tr>
-      {% endunless %}
-  
-      {% unless product.metafields.my_fields.reference == NIL %}
+    {% endunless %}
+
+    {% unless product.metafields.my_fields.reference == NIL %}
       <tr>
         <td>{{ 'general.product_metafields.reference' | t | upcase }}</td>
         <td>{{ product.metafields.my_fields.reference }}</td>
       </tr>
-      {% endunless %}
+    {% endunless %}
 
-      <!-- watch -->
-      {% unless product.metafields.my_fields.type == NIL %}
+    <!-- watch -->
+    {% unless product.metafields.my_fields.type == NIL %}
       <tr>
         <td>{{ 'general.product_metafields.type' | t | upcase }}</td>
         <td>{{ product.metafields.my_fields.type }}</td>
       </tr>
-      {% endunless %}
+    {% endunless %}
 
-      {% unless product.metafields.my_fields.watch_case == NIL %}
+    {% unless product.metafields.my_fields.watch_case == NIL %}
       <tr>
-        <td>{{ 'general.product_metafields.watch_case' | t | upcase }}<br /></td>
+        <td>
+          {{ 'general.product_metafields.watch_case' | t | upcase -}}
+          <br>
+        </td>
         <td>{{ product.metafields.my_fields.watch_case }}</td>
       </tr>
-      {% endunless %}
+    {% endunless %}
 
-      {% unless product.metafields.my_fields.strap == NIL %}
+    {% unless product.metafields.my_fields.strap == NIL %}
       <tr>
         <td>{{ 'general.product_metafields.strap' | t | upcase }}</td>
         <td>{{ product.metafields.my_fields.strap }}</td>
       </tr>
-      {% endunless %}
+    {% endunless %}
 
-      {% unless product.metafields.my_fields.calibre == NIL %}
+    {% unless product.metafields.my_fields.calibre == NIL %}
       <tr>
         <td>{{ 'general.product_metafields.calibre' | t | upcase }}</td>
         <td>{{ product.metafields.my_fields.calibre }}</td>
       </tr>
-      {% endunless %}
+    {% endunless %}
 
-      {% unless product.metafields.my_fields.dial == NIL %}
+    {% unless product.metafields.my_fields.complications == NIL %}
+      <tr>
+        <td>{{ 'general.product_metafields.complications' | t | upcase }}</td>
+        <td>{{ product.metafields.my_fields.complications.value | join: ', ' }}</td>
+      </tr>
+    {% endunless %}
+
+    {% unless product.metafields.my_fields.dial == NIL %}
       <tr>
         <td>{{ 'general.product_metafields.dial' | t | upcase }}</td>
         <td>{{ product.metafields.my_fields.dial }}</td>
       </tr>
-      {% endunless %}
+    {% endunless %}
 
-      {% unless product.metafields.my_fields.glass == NIL %}
+    {% unless product.metafields.my_fields.glass == NIL %}
       <tr>
         <td>{{ 'general.product_metafields.glass' | t | upcase }}</td>
         <td>{{ product.metafields.my_fields.glass }}</td>
       </tr>
-      {% endunless %}
+    {% endunless %}
 
-      {% unless product.metafields.my_fields.diameter == NIL %}
+    {% unless product.metafields.my_fields.diameter == NIL %}
       <tr>
-        <td><span>{{ 'general.product_metafields.diameter' | t | upcase }}</span></td>
+        <td>
+          <span>{{ 'general.product_metafields.diameter' | t | upcase }}</span>
+        </td>
         <td>{{ product.metafields.my_fields.diameter }}</td>
       </tr>
-      {% endunless %}
-      <!-- endwatch -->
-  
-      {% unless product.metafields.my_fields.material_list == NIL %}
+    {% endunless %}
+    <!-- endwatch -->
+
+    {% unless product.metafields.my_fields.material_list == NIL %}
       <tr>
         <td>{{ 'general.product_metafields.material' | t | upcase }}</td>
         <td>
-          {{ product.metafields.my_fields.material_list.value | join: ", " }}
-  
-          <br />
+          {{ product.metafields.my_fields.material_list.value | join: ', ' }}
+
+          <br>
         </td>
       </tr>
-      {% endunless %}
-  
-      {% unless product.metafields.my_fields.stones == NIL %}
+    {% endunless %}
+
+    {% unless product.metafields.my_fields.stones == NIL %}
       <tr>
         <td>{{ 'general.product_metafields.stones' | t | upcase }}</td>
-        <td>{{ product.metafields.my_fields.stones }}<br /></td>
+        <td>
+          {{ product.metafields.my_fields.stones -}}
+          <br>
+        </td>
       </tr>
-      {% endunless %}
-  
-      {% unless product.metafields.my_fields.cut == NIL %}
+    {% endunless %}
+
+    {% unless product.metafields.my_fields.cut == NIL %}
       <tr>
         <td>{{ 'general.product_metafields.cut' | t | upcase }}</td>
         <td>{{ product.metafields.my_fields.cut }}</td>
       </tr>
-      {% endunless %}
-  
-      {% unless product.metafields.my_fields.carat == NIL %}
+    {% endunless %}
+
+    {% unless product.metafields.my_fields.carat == NIL %}
       <tr>
         <td>{{ 'general.product_metafields.carat' | t | upcase }}</td>
         <td>{{ product.metafields.my_fields.carat }}</td>
       </tr>
-      {% endunless %}
-  
-      {% unless product.metafields.my_fields.stone_color == NIL %}
+    {% endunless %}
+
+    {% unless product.metafields.my_fields.stone_color == NIL %}
       <tr>
         <td>{{ 'general.product_metafields.stone_color' | t | upcase }}</td>
         <td>{{ product.metafields.my_fields.stone_color }}</td>
       </tr>
-      {% endunless %}
-  
-      {% unless product.metafields.my_fields.clarity == NIL %}
+    {% endunless %}
+
+    {% unless product.metafields.my_fields.clarity == NIL %}
       <tr>
         <td>{{ 'general.product_metafields.clarity' | t | upcase }}</td>
         <td>{{ product.metafields.my_fields.clarity }}</td>
       </tr>
-      {% endunless %}
+    {% endunless %}
 
-      {% unless product.metafields.my_fields.pearls == NIL %}
+    {% unless product.metafields.my_fields.pearls == NIL %}
       <tr>
         <td>{{ 'general.product_metafields.pearls' | t | upcase }}</td>
         <td>{{ product.metafields.my_fields.pearls }}</td>
       </tr>
-      {% endunless %}
+    {% endunless %}
 
-      {% unless product.metafields.my_fields.accessories_material == NIL %}
+    {% unless product.metafields.my_fields.accessories_material == NIL %}
       <tr>
         <td>{{ 'general.product_metafields.material' | t | upcase }}</td>
-        <td>{{ product.metafields.my_fields.accessories_material }}<br /></td>
+        <td>
+          {{ product.metafields.my_fields.accessories_material -}}
+          <br>
+        </td>
       </tr>
-      {% endunless %}
+    {% endunless %}
 
-      {% unless product.metafields.my_fields.accessories_color == NIL %}
+    {% unless product.metafields.my_fields.accessories_color == NIL %}
       <tr>
         <td>{{ 'general.product_metafields.accessories_color' | t | upcase }}</td>
         <td>{{ product.metafields.my_fields.accessories_color }}</td>
       </tr>
-      {% endunless %}
+    {% endunless %}
 
-
-  
-      {% unless product.metafields.my_fields.special_info == NIL %}
+    {% unless product.metafields.my_fields.special_info == NIL %}
       <tr>
         <td>
-          {{ 'general.product_metafields.special_info' | t | upcase }}<br />
+          {{ 'general.product_metafields.special_info' | t | upcase -}}
+          <br>
         </td>
         <td>{{ product.metafields.my_fields.special_info }}</td>
       </tr>
-      {% endunless %}
-      
-      {% unless product.metafields.my_fields.technical_grading == NIL %}
+    {% endunless %}
+
+    {% unless product.metafields.my_fields.technical_grading == NIL %}
       <tr>
         <td>{{ 'general.product_metafields.technical_grading' | t | upcase }}</td>
         <td>{{ product.metafields.my_fields.technical_grading }}</td>
       </tr>
-      {% endunless %}
+    {% endunless %}
 
-      {% unless product.metafields.my_fields.optical_grading == NIL %}
+    {% unless product.metafields.my_fields.optical_grading == NIL %}
       <tr>
         <td>
-          {{ 'general.product_metafields.optical_grading' | t | upcase }}<br />
+          {{ 'general.product_metafields.optical_grading' | t | upcase -}}
+          <br>
         </td>
         <td>{{ product.metafields.my_fields.optical_grading }}</td>
       </tr>
-      {% endunless %}
+    {% endunless %}
 
-      {% unless product.metafields.my_fields.accessories_grading == NIL %}
+    {% unless product.metafields.my_fields.accessories_grading == NIL %}
       <tr>
         <td>
           {{ 'general.product_metafields.accessories_grading' | t | upcase }}
         </td>
         <td>{{ product.metafields.my_fields.accessories_grading.value }}</td>
       </tr>
-      {% endunless %}
+    {% endunless %}
 
-      {% unless product.metafields.my_fields.year == NIL %}
+    {% unless product.metafields.my_fields.year == NIL %}
       <tr>
         <td>{{ 'general.product_metafields.year' | t | upcase }}</td>
         <td>{{ product.metafields.my_fields.year }}</td>
       </tr>
-      {% endunless %}
-  
-      {% unless product.metafields.my_fields.weight == NIL %}
+    {% endunless %}
+
+    {% unless product.metafields.my_fields.weight == NIL %}
       <tr>
         <td>{{ 'general.product_metafields.weight' | t | upcase }}</td>
         <td>{{ product.metafields.my_fields.weight.value }}</td>
       </tr>
-      {% endunless %}
-  
-      {% unless product.metafields.my_fields.length == NIL %}
+    {% endunless %}
+
+    {% unless product.metafields.my_fields.length == NIL %}
       <tr>
-        <td>{{ 'general.product_metafields.length' | t | upcase }}<br /></td>
+        <td>
+          {{ 'general.product_metafields.length' | t | upcase -}}
+          <br>
+        </td>
         <td>{{ product.metafields.my_fields.length }}</td>
       </tr>
-      {% endunless %}
-  
-      {% unless product.metafields.my_fields.ringsize == NIL %}
+    {% endunless %}
+
+    {% unless product.metafields.my_fields.ringsize == NIL %}
       <tr>
-        <td>{{ 'general.product_metafields.ringsize' | t | upcase }}<br /></td>
+        <td>
+          {{ 'general.product_metafields.ringsize' | t | upcase -}}
+          <br>
+        </td>
         <td>{{ product.metafields.my_fields.ringsize }}</td>
       </tr>
-      {% endunless %}
-      
-      {% unless product.metafields.my_fields.papers == NIL %}
+    {% endunless %}
+
+    {% unless product.metafields.my_fields.papers == NIL %}
       <tr>
         <td>{{ 'general.product_metafields.papers' | t | upcase }}</td>
         <td>
-          {% if product.metafields.my_fields.papers == true %}{{ 'general.product_metafields.yes' | t }}{% endif %}{% if
-          product.metafields.my_fields.papers == false %}{{ 'general.product_metafields.no' | t }}{% endif %}
+          {% if product.metafields.my_fields.papers == true %}{{ 'general.product_metafields.yes' | t }}{% endif -%}
+          {%- if product.metafields.my_fields.papers == false -%}
+            {{- 'general.product_metafields.no' | t -}}
+          {%- endif %}
         </td>
       </tr>
-      {% endunless %}
+    {% endunless %}
 
-      {% unless product.metafields.my_fields.box == NIL %}
+    {% unless product.metafields.my_fields.box == NIL %}
       <tr>
         <td>{{ 'general.product_metafields.box' | t | upcase }}</td>
         <td>
-          {% if product.metafields.my_fields.box == true %}{{ 'general.product_metafields.yes' | t }}{% endif %}{% if
-          product.metafields.my_fields.box == false %}{{ 'general.product_metafields.no' | t }}{% endif %}<br />
+          {% if product.metafields.my_fields.box == true %}{{ 'general.product_metafields.yes' | t }}{% endif -%}
+          {%- if product.metafields.my_fields.box == false -%}
+            {{- 'general.product_metafields.no' | t -}}
+          {%- endif -%}
+          <br>
         </td>
       </tr>
-      {% endunless %}
+    {% endunless %}
 
-      <tr>
-        <td>{{ 'general.product_metafields.internal_nr' | t | upcase }}</td>
-        <td>{{ product.metafields.my_fields.internal_nr }}</td>
-      </tr>
-    </tbody>
-  </table>
-  
+    <tr>
+      <td>{{ 'general.product_metafields.internal_nr' | t | upcase }}</td>
+      <td>{{ product.metafields.my_fields.internal_nr }}</td>
+    </tr>
+  </tbody>
+</table>
