@@ -16,7 +16,9 @@
     ></script>
     <script>
       let cookieLink = document.getElementById('CybotCookiebotDialogPoweredbyCybot');
-      cookieLink.setAttribute('alt', 'Cookiebot Explanation');
+      if (typeof cookieLink !== 'undefined') {
+        cookieLink.setAttribute('alt', 'Cookiebot Explanation');
+      }
     </script>
     {%- if settings.favicon != blank -%}
       <link rel='icon' type='image/png' href='{{ settings.favicon | image_url: width: 32, height: 32 }}'>
