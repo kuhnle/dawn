@@ -15,11 +15,10 @@
           "settings": {
           }
         },
-        "1895975c-42aa-4f26-a410-e167429b17fa": {
-          "type": "text",
+        "6f813b27-944c-415c-9c3d-79f2ad87ce74": {
+          "type": "custom_liquid",
           "settings": {
-            "text": "Liebhaberstück",
-            "text_style": "body"
+            "custom_liquid": "{% render 'special' %}"
           }
         },
         "caption": {
@@ -84,7 +83,7 @@
       "block_order": [
         "vendor",
         "title",
-        "1895975c-42aa-4f26-a410-e167429b17fa",
+        "6f813b27-944c-415c-9c3d-79f2ad87ce74",
         "caption",
         "price",
         "3d4a89a3-703d-42aa-bd19-9d0c68a7b911",
