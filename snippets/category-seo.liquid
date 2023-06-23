@@ -1,3 +1,7 @@
+{% assign startYear = 1908 %}
+{% assign thisYear = 'now' | date: '%Y' %}
+{% assign yearsOpen = thisYear | minus: startYear %}
+
 <div
   class="banner banner--content-align-center banner--content-align-mobile-center banner--medium banner--mobile-bottom"
 >
@@ -26,10 +30,10 @@
           {% elsif collection.handle == 'accessoires' %}
             Erleben Sie den besonderen Charme von Pre-Loved Vintage Accessoires bei Kuhnle Vintage. Hochwertige Taschen
             und exklusive Accessoires runden Ihren Auftritt ab und machen Sie zum Blickfang. Bei Kuhnle Vintage können
-            Sie mit 113 Jahren Branchenerfahrung und mehr als 300 zufriedenen Kunden sicher online einkaufen. Jeder Kauf
-            ist mit einer Garantie für Echtheit gekrönt. Entdecken Sie Luxusmarken wie Hermès, Louis Vuitton und
-            Cartier. Fügen Sie eine Prise Vintage-Luxus zu Ihrer Sammlung hinzu und erleben Sie die Faszination von
-            Accessoires mit Geschichte. Kaufen Sie jetzt bei Kuhnle Vintage.
+            Sie mit {{ yearsOpen }} Jahren Branchenerfahrung und mehr als 300 zufriedenen Kunden sicher online
+            einkaufen. Jeder Kauf ist mit einer Garantie für Echtheit gekrönt. Entdecken Sie Luxusmarken wie Hermès,
+            Louis Vuitton und Cartier. Fügen Sie eine Prise Vintage-Luxus zu Ihrer Sammlung hinzu und erleben Sie die
+            Faszination von Accessoires mit Geschichte. Kaufen Sie jetzt bei Kuhnle Vintage.
           {% endif %}
         </p>
       </div>
