@@ -28,7 +28,8 @@
       "acquisition_extras": "Zubehör (z.B. Box und Papiere)",
       "is_taxable": "inkl. MwSt.",
       "not_taxable": "Dieser Artikel unterliegt nach § 25a UStG der Differenzbesteuerung. Die Mehrwertsteuer wird auf der Rechnung daher nicht separat ausgewiesen.",
-      "notification_mail_legal": "Juwelier Kuhnle GmbH, vertreten durch den Geschäftsführer Christoph Kuhnle, Königstr. 141, 90762 Fürth, HRB 2990 AG Fürth, Umsatzsteuer Identifikationsnummer: DE 812 6389 58"
+      "notification_mail_legal": "Juwelier Kuhnle GmbH, vertreten durch den Geschäftsführer Christoph Kuhnle, Königstr. 141, 90762 Fürth, HRB 2990 AG Fürth, Umsatzsteuer Identifikationsnummer: DE 812 6389 58",
+      "newsletter_spam_alert": "Vielen Dank für Ihre Anmeldung.\n\nWir haben Ihnen eine Bestätigungs-E-Mail zugeschickt.\n\nBitte überprüfen Sie Ihr E-Mail-Postfach und Ihren Spamordner."
     },
     "product_metafields": {
       "reference": "Referenz",

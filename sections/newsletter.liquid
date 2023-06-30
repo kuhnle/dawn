@@ -15,65 +15,83 @@
   }
 {%- endstyle -%}
 
-<div class="newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}">
-  <div class="newsletter__wrapper color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding">
+<div class='newsletter center {% if section.settings.full_width == false %}newsletter--narrow page-width{% endif %}'>
+  <div class='newsletter__wrapper color-{{ section.settings.color_scheme }} gradient content-container isolate{% if section.settings.full_width %} content-container--full-width{% endif %} section-{{ section.id }}-padding'>
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when '@app' -%}
           {% render block %}
         {%- when 'heading' -%}
-          <h2 class="inline-richtext {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" {{ block.shopify_attributes }}
-          data-cascade>
+          <h2
+            class='inline-richtext {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}'
+            {{ block.shopify_attributes }}
+            data-cascade
+          >
             {{ block.settings.heading }}
           </h2>
         {%- when 'paragraph' -%}
-          <div class="newsletter__subheading rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" {{ block.shopify_attributes }} data-cascade>{{ block.settings.text }}</div>
+          <div
+            class='newsletter__subheading rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}'
+            {{ block.shopify_attributes }}
+            data-cascade
+          >
+            {{ block.settings.text }}
+          </div>
         {%- when 'email_form' -%}
           <div {{ block.shopify_attributes }}>
             {% form 'customer', class: 'newsletter-form' %}
-              <input type="hidden" name="contact[tags]" value="newsletter">
-              <div class="newsletter-form__field-wrapper{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" data-cascade>
-                <div class="field">
+              <input type='hidden' name='contact[tags]' value='newsletter'>
+              <div
+                class='newsletter-form__field-wrapper{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}'
+                data-cascade
+              >
+                <div class='field'>
                   <input
-                    id="NewsletterForm--{{ section.id }}"
-                    type="email"
-                    name="contact[email]"
-                    class="field__input"
-                    value="{{ form.email }}"
-                    aria-required="true"
-                    autocorrect="off"
-                    autocapitalize="off"
-                    autocomplete="email"
+                    id='NewsletterForm--{{ section.id }}'
+                    type='email'
+                    name='contact[email]'
+                    class='field__input'
+                    value='{{ form.email }}'
+                    aria-required='true'
+                    autocorrect='off'
+                    autocapitalize='off'
+                    autocomplete='email'
                     {% if form.errors %}
                       autofocus
-                      aria-invalid="true"
-                      aria-describedby="Newsletter-error--{{ section.id }}"
+                      aria-invalid='true'
+                      aria-describedby='Newsletter-error--{{ section.id }}'
                     {% elsif form.posted_successfully? %}
-                      aria-describedby="Newsletter-success--{{ section.id }}"
+                      aria-describedby='Newsletter-success--{{ section.id }}'
                     {% endif %}
-                    placeholder="{{ 'newsletter.label' | t }}"
+                    placeholder='{{ 'newsletter.label' | t }}'
                     required
                   >
-                  <label class="field__label" for="NewsletterForm--{{ section.id }}">
+                  <label class='field__label' for='NewsletterForm--{{ section.id }}'>
                     {{ 'newsletter.label' | t }}
                   </label>
-                  <button type="submit" class="button" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
+                  <button
+                    type='submit'
+                    class='button'
+                    name='commit'
+                    id='Subscribe'
+                    aria-label='{{ 'newsletter.button_label' | t }}'
+                  >
                     {{ 'general.custom_code.newsletter_footer_subscribe' | t }}
                   </button>
                   {% comment %}
-                  <button
-                    type="submit"
-                    class="newsletter-form__button field__button"
-                    name="commit"
-                    id="Subscribe"
-                    aria-label="{{ 'newsletter.button_label' | t }}"
-                  >
-                    {% render 'icon-arrow' %}
-                  </button>
-                {% endcomment %}
+                    <button
+                      type="submit"
+                      class="newsletter-form__button field__button"
+                      name="commit"
+                      id="Subscribe"
+                      aria-label="{{ 'newsletter.button_label' | t }}"
+                    >
+                      {% render 'icon-arrow' %}
+                    </button>
+                  {% endcomment %}
                 </div>
                 {%- if form.errors -%}
-                  <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">
+                  <small class='newsletter-form__message form__message' id='Newsletter-error--{{ section.id }}'>
                     {%- render 'icon-error' -%}
                     {{- form.errors.translated_fields.email | capitalize }}
                     {{ form.errors.messages.email -}}
@@ -82,18 +100,22 @@
               </div>
               {%- if form.posted_successfully? -%}
                 <h3
-                  class="newsletter-form__message newsletter-form__message--success form__message"
-                  id="Newsletter-success--{{ section.id }}"
-                  tabindex="-1"
+                  class='newsletter-form__message newsletter-form__message--success form__message'
+                  id='Newsletter-success--{{ section.id }}'
+                  tabindex='-1'
                   autofocus
                 >
                   {% render 'icon-success' -%}
                   {{- 'newsletter.success' | t }}
                 </h3>
+                window.alert({{ 'general.custom_code.newsletter_spam_alert' | t }});
               {%- endif -%}
-              <div style="text-align: left; margin-top: 1em; font-size: 12px;">
-                <input type="checkbox" required>
-                <p style="display:inline"><span style="color:red">*</span> {{ 'general.custom_code.newsletter_footer_legal' | t }} <a href="/policies/privacy-policy">{{ 'general.custom_code.privacy_policy' | t }}</a></p>
+              <div style='text-align: left; margin-top: 1em; font-size: 12px;'>
+                <input type='checkbox' required>
+                <p style='display:inline'>
+                  <span style='color:red'>*</span> {{ 'general.custom_code.newsletter_footer_legal' | t }}
+                  <a href='/policies/privacy-policy'>{{ 'general.custom_code.privacy_policy' | t }}</a>
+                </p>
               </div>
             {% endform %}
           </div>
@@ -102,11 +124,11 @@
   </div>
 </div>
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-  	let mail = sessionStorage.getItem("newsletter_mail");
-  	mail = mail === null ? "" : mail;
-  	document.getElementById("NewsletterForm--{{ section.id }}").value = mail;
-    sessionStorage.removeItem("newsletter_mail");
+  document.addEventListener('DOMContentLoaded', () => {
+    let mail = sessionStorage.getItem('newsletter_mail');
+    mail = mail === null ? '' : mail;
+    document.getElementById('NewsletterForm--{{ section.id }}').value = mail;
+    sessionStorage.removeItem('newsletter_mail');
   });
 </script>
 
