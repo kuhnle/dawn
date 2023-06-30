@@ -108,7 +108,9 @@
                   {% render 'icon-success' -%}
                   {{- 'newsletter.success' | t }}
                 </h3>
-                window.alert({{ 'general.custom_code.newsletter_spam_alert' | t }});
+                <script>
+                  window.alert({{ 'general.custom_code.newsletter_spam_alert' | t }});
+                </script>
               {%- endif -%}
               <div style='text-align: left; margin-top: 1em; font-size: 12px;'>
                 <input type='checkbox' required>
