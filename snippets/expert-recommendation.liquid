@@ -10,6 +10,8 @@
       >
       <h2>Unsere Expertin empfiehlt:</h2>
     </div>
-    <q style="font-style: italic; padding-left: 2em;">{{ product.metafields.my_fields.expert_recommendation }}</q>
+    <q style="font-style: italic; padding-left: 1em; padding-right: 2em">
+      {{- product.metafields.my_fields.expert_recommendation -}}
+    </q>
   </div>
 {% endunless %}
