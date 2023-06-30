@@ -29,7 +29,7 @@
       "is_taxable": "incl. VAT",
       "not_taxable": "This item is subject to differential taxation according to § 25a UStG. The VAT is therefore not shown separately on the invoice.",
       "notification_mail_legal": "Juwelier Kuhnle GmbH, represented by the managing director Christoph Kuhnle, Königstr. 141, 90762 Fürth, HRB 2990 AG Fürth, VAT identification number: DE 812 6389 58",
-      "general.custom_code.newsletter_spam_alert": "Thank you for signing up.\n\nWe have sent you a confirmation email.\n\nPlease check your email inbox and spam folder."
+      "newsletter_spam_alert": "Thank you for signing up.\n\nWe have sent you a confirmation email.\n\nPlease check your email inbox and spam folder."
     },
     "product_metafields": {
       "reference": "Reference",
