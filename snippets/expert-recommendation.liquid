@@ -1,5 +1,8 @@
 {% unless product.metafields.my_fields.expert_recommendation == NIL %}
-  <div style="display: flex; flex-direction: column; padding: 1em; gap: 1em">
+  <div style="display: flex; flex-direction: column; padding: 1em;">
+    <div style="display: flex; flex-direction: row; gap: 1em">
+      <h2>Unsere Expertin empfiehlt:</h2>
+    </div>
     <p>{{ product.metafields.my_fields.expert_recommendation }}</p>
   </div>
 {% endunless %}
