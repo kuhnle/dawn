@@ -1,5 +1,5 @@
 {% unless product.metafields.my_fields.expert_recommendation == NIL %}
-  <div style="display: flex; flex-direction: column; padding: 1em; border: 1px solid black; border-radius: 10px; margin-top:3em; margin-bottom: 3em">
+  <div style="display: flex; flex-direction: column; padding: 1em; padding-left: 2em; border: 1px solid black; border-radius: 10px; margin-top:3em; margin-bottom: 3em">
     <div style="display: flex; flex-direction: row; gap: 1em; align-items: center">
       <img
         src="https://cdn.shopify.com/s/files/1/0574/4351/6613/files/kerstin-hermann_NpFU.webp"
@@ -10,7 +10,7 @@
       >
       <h2>Unsere Expertin empfiehlt:</h2>
     </div>
-    <q style="font-style: italic; padding-left: 1em; padding-right: 2em">
+    <q style="font-style: italic; padding-right: 2em">
       {{- product.metafields.my_fields.expert_recommendation -}}
     </q>
   </div>
