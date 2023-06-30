@@ -110,6 +110,7 @@
                 </h3>
                 <script>
                   let message = "{{ 'general.custom_code.newsletter_spam_alert' | t }}";
+                  message = message.replace('<br>', '\n\n');
                   window.alert(message);
                 </script>
               {%- endif -%}
