@@ -109,8 +109,8 @@
                   {{- 'newsletter.success' | t }}
                 </h3>
                 <script>
-                  window.alert({{ 'general.custom_code.newsletter_spam_alert' }});
-                  window.alert({{ 'general.custom_code.newsletter_spam_alert' | t }});
+                  let message = {{ 'general.custom_code.newsletter_spam_alert' | t }};
+                  window.alert(message);
                 </script>
               {%- endif -%}
               <div style='text-align: left; margin-top: 1em; font-size: 12px;'>
