@@ -55,6 +55,11 @@
             "show_gift_card_recipient": false
           }
         },
+        "d8b25bb0-67cc-41c7-9ff9-f1713db62fa4": {
+          "type": "description",
+          "settings": {
+          }
+        },
         "e5682e52-e1b0-4cde-9a72-80c2cc0605ff": {
           "type": "custom_liquid",
           "settings": {
@@ -78,6 +83,7 @@
         "dc9096c1-af5f-46cc-9311-863986ad70c8",
         "variant_picker",
         "buy_buttons",
+        "d8b25bb0-67cc-41c7-9ff9-f1713db62fa4",
         "e5682e52-e1b0-4cde-9a72-80c2cc0605ff",
         "d885d5bf-1b39-4668-b6f6-a3e0691bfb01"
       ],
