@@ -6,15 +6,15 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Vintage Uhren und Schmuck aus Expertenhand",
+            "heading": "Luxus mit Geschichte",
             "heading_size": "h0"
           }
         },
         "12615e7f-4b05-4c56-a252-4d3dc40235d0": {
           "type": "text",
           "settings": {
-            "text": "Sorgfältig ausgewählt und geprüft vom familiengeführten Juwelier Ihres Vertrauens",
-            "text_style": "body"
+            "text": "Sofort verfügbar und garantierte Echtheit. 113 Jahre Branchenerfahrung und 300+ zufriedene Kunden",
+            "text_style": "subtitle"
           }
         },
         "button": {
@@ -35,9 +35,9 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/uhr-am-handgelenk.jpg",
+        "image": "shopify:\/\/shop_images\/3633-46.jpg",
         "image_overlay_opacity": 40,
-        "image_height": "small",
+        "image_height": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -327,7 +327,7 @@
       "type": "apps",
       "blocks": {
         "e763947d-a125-4bb4-9f94-4ca7cc17d555": {
-          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
             "heading_size": 30,
             "feed_width": 100,
