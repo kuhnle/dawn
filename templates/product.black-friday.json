@@ -18,7 +18,7 @@
         "6f813b27-944c-415c-9c3d-79f2ad87ce74": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% render 'special' %}"
+            "custom_liquid": "{% render 'blackfriday' %}"
           }
         },
         "caption": {
