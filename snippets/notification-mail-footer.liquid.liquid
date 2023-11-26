@@ -1,0 +1,56 @@
+<table class="row footer">
+  <tr>
+    <td class="footer__cell">
+      <center>
+        <table class="container">
+          <tr>
+            <td>
+              <p class="disclaimer__subtext">
+                Falls Sie Fragen haben, antworten Sie auf diese E-Mail oder kontaktieren Sie uns unter
+                <a href="mailto:{{ shop.email }}">{{ shop.email }}</a>.
+              </p>
+            </td>
+          </tr>
+        </table>
+        <table class="container" style="font-size:14px">
+          <img src="{{ 'notifications/spacer.png' | shopify_asset_url }}" class="spacer" height="1">
+          <tr>
+            <td>
+              <p class="disclaimer__subtext">{{ 'general.custom_code.notification_mail_legal' | t }}</p>
+              <br>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:center;">
+              <a
+                href="https://vintage.kuhnle.de/policies/legal-notice"
+                style="text-decoration: underline; font-size:14px"
+              >
+                {{- 'general.custom_code.legal_notice' | t -}}
+              </a>
+              |
+              <a
+                href="https://vintage.kuhnle.de/policies/privacy-policy"
+                style="text-decoration: underline; font-size:14px"
+              >
+                {{- 'general.custom_code.privacy_policy' | t -}}
+              </a>
+              |
+              <a
+                href="https://vintage.kuhnle.de/policies/terms-of-service"
+                style="text-decoration: underline; font-size:14px"
+              >
+                {{- 'general.custom_code.terms_of_service' | t -}}
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align:center;">
+              <p class="disclaimer__subtext">&copy; {{ 'now' | date: '%Y' }} Juwelier Kuhnle</p>
+            </td>
+          </tr>
+        </table>
+      </center>
+    </td>
+  </tr>
+</table>
