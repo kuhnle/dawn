@@ -6,21 +6,21 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "BLACK FRIDAY WEEK",
+            "heading": "Luxus mit Geschichte",
             "heading_size": "h0"
           }
         },
         "12615e7f-4b05-4c56-a252-4d3dc40235d0": {
           "type": "text",
           "settings": {
-            "text": "Exklusive Angebote auf ausgewählte Breitling Uhren.",
+            "text": "113 Jahre Branchenerfahrung und 300+ zufriedene Kunden",
             "text_style": "subtitle"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "24.11.23 - 01.12.23",
+            "button_label_1": "Jetzt entdecken",
             "button_link_1": "shopify:\/\/collections",
             "button_style_secondary_1": true,
             "button_label_2": "",
@@ -35,7 +35,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Black_Friday_Vintage_Banner.jpg",
+        "image": "shopify:\/\/shop_images\/3633-46.jpg",
         "image_overlay_opacity": 40,
         "image_height": "small",
         "desktop_content_position": "middle-center",
