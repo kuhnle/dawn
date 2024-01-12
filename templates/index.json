@@ -306,7 +306,7 @@
         "template--17832272265481__09be93cb-624e-4881-8d8c-2f683a213000-168234711494d3a08f-0": {
           "type": "heading",
           "settings": {
-            "heading": "Entdecken Sie uns auf Instagram",
+            "heading": "Entdecken Sie uns auf Instagram.",
             "heading_size": "h1"
           }
         }
@@ -329,6 +329,9 @@
         "e763947d-a125-4bb4-9f94-4ca7cc17d555": {
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
+            "title": "",
+            "title_color": "",
+            "alignment": "center",
             "html_area": ""
           }
         }
