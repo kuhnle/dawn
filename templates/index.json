@@ -326,7 +326,7 @@
     "16549769441e0b881a": {
       "type": "apps",
       "blocks": {
-        "e763947d-a125-4bb4-9f94-4ca7cc17d555": {
+        "instafeed_app_block_RWWbyN": {
           "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
             "title": "",
@@ -337,7 +337,7 @@
         }
       },
       "block_order": [
-        "e763947d-a125-4bb4-9f94-4ca7cc17d555"
+        "instafeed_app_block_RWWbyN"
       ],
       "settings": {
         "include_margins": true
