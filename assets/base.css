@@ -3449,7 +3449,6 @@ a[href^='tel'] {
   }
 }
 .card__badge--preview {
-  border: 1px solid transparent;
   border-radius: var(--badge-corner-radius);
   display: inline-block;
   font-size: 1.2rem;
@@ -3461,4 +3460,15 @@ a[href^='tel'] {
   border-color: rgba(var(--color-badge-border), var(--alpha-badge-border));
   color: rgb(var(--color-foreground));
   word-break: break-word;
+
+  position: absolute;
+  display: inline-block;
+  line-height: 1;
+  text-align:center;
+  font-size: 1.2rem;
+  left: .5rem;
+  top: .5rem; 
+  background-color: #9fb18e ;
+  color:white;
+  padding: .6rem 1.3rem
 }
