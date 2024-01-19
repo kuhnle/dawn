@@ -3457,6 +3457,5 @@ a[href^='tel'] {
   padding: 0.5rem 1.3rem 0.6rem 1.3rem;
   text-align: center;
   background-color: #3a3a3a;
-
-  color: #ffffff;
+  color: white;
 }
