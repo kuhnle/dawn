@@ -3449,7 +3449,7 @@ a[href^='tel'] {
   }
 }
 .card__badge--preview {
-  
+  border-radius: var(--badge-corner-radius);
   display: inline-block;
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
