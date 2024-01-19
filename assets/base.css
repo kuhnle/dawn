@@ -3456,19 +3456,7 @@ a[href^='tel'] {
   line-height: 1;
   padding: 0.5rem 1.3rem 0.6rem 1.3rem;
   text-align: center;
-  background-color: #000000;
+  background-color: #3a3a3a;
   border-color: rgba(var(--color-badge-border), var(--alpha-badge-border));
   color: rgb(var(--color-foreground));
-  word-break: break-word;
-
-  position: absolute;
-  display: inline-block;
-  line-height: 1;
-  text-align:center;
-  font-size: 1.2rem;
-  left: .5rem;
-  top: .5rem; 
-  background-color: #9fb18e ;
-  color:white;
-  padding: .6rem 1.3rem
 }
