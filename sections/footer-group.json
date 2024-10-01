@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "name": "t:sections.footer.name",
   "type": "footer",
@@ -23,7 +32,7 @@
           "type": "text",
           "settings": {
             "heading": "Anfahrt und Öffnungszeiten",
-            "subtext": "<p>Königstraße 141<br\/>90762 Fürth<br\/><strong><br\/>Montag<\/strong>: <br\/>geschlossen<br\/><strong>Dienstag - Freitag: <\/strong><br\/>9:30-13:00 und 14:00-18:00 Uhr<br\/><strong>Samstag:<\/strong><br\/>9:30 - 15:00 Uhr<\/p><p><strong>Feiertage geschlossen:<\/strong><br\/>30.05.2024 Fronleichnam<br\/>03.10.2024  Tag der Deutschen Einheit<\/p>"
+            "subtext": "<p>Königstraße 141<br/>90762 Fürth<br/><strong><br/>Montag</strong>: <br/>geschlossen<br/><strong>Dienstag - Freitag: </strong><br/>9:30-13:00 und 14:00-18:00 Uhr<br/><strong>Samstag:</strong><br/>9:30 - 15:00 Uhr</p><p><strong>Öffnungszeiten Fürther Kirchweih 2024:<br/></strong>Dienstag 01.10.24:<br/> 09:30-12:30 Uhr und 14:00-18:00 Uhr<br/>Mittwoch 02.10.24:<br/>09:30-13:00 Uhr und 14:00-18:00 Uhr<br/><strong>GESCHLOSSEN 03.10 - 05.10.24<br/></strong></p>"
           }
         }
       },
