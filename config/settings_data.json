@@ -1,8 +1,17 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/817-kuhnle_vintage_25ebe783-1747-4add-be44-b891a6165e76.png",
+    "logo": "shopify://shop_images/817-kuhnle_vintage_25ebe783-1747-4add-be44-b891a6165e76.png",
     "logo_width": 150,
-    "favicon": "shopify:\/\/shop_images\/Feuerrad.png",
+    "favicon": "shopify://shop_images/Feuerrad.png",
     "colors_solid_button_labels": "#ffffff",
     "colors_accent_1": "#3a3a3a",
     "gradient_accent_1": "",
@@ -86,11 +95,11 @@
     "sale_badge_color_scheme": "accent-1",
     "sold_out_badge_color_scheme": "inverse",
     "accent_icons": "text",
-    "social_facebook_link": "https:\/\/www.facebook.com\/JuwelierKuhnle\/",
-    "social_instagram_link": "https:\/\/www.instagram.com\/kuhnle_vintage",
-    "social_youtube_link": "https:\/\/www.youtube.com\/user\/JuwelierKuhnleKanal",
+    "social_facebook_link": "https://www.facebook.com/JuwelierKuhnle/",
+    "social_instagram_link": "https://www.instagram.com/kuhnle_vintage",
+    "social_youtube_link": "https://www.youtube.com/user/JuwelierKuhnleKanal",
     "social_tiktok_link": "",
-    "social_twitter_link": "https:\/\/twitter.com\/Kuhnle",
+    "social_twitter_link": "https://twitter.com/Kuhnle",
     "social_snapchat_link": "",
     "social_pinterest_link": "",
     "social_tumblr_link": "",
@@ -151,7 +160,7 @@
             "type": "text",
             "settings": {
               "heading": "Anfahrt und Öffnungszeiten",
-              "subtext": "<p>Königstraße 141<br\/>90762 Fürth<\/p><p><strong>Öffnungszeiten:<br\/><\/strong>Montag: <br\/>geschlossen<br\/>Dienstag-Freitag: <br\/>9:30-13:00 und 14:00-18:00 Uhr<br\/>Samstag:<br\/>9:30 - 15:00 Uhr<br\/><strong>Faschingsdienstag 21.02.23 geschlossen<\/strong><\/p>"
+              "subtext": "<p>Königstraße 141<br/>90762 Fürth</p><p><strong>Öffnungszeiten:<br/></strong>Montag: <br/>geschlossen<br/>Dienstag-Freitag: <br/>9:30-13:00 und 14:00-18:00 Uhr<br/>Samstag:<br/>9:30 - 15:00 Uhr<br/><strong>Faschingsdienstag 21.02.23 geschlossen</strong></p>"
             }
           }
         },
@@ -188,7 +197,15 @@
     },
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "1232542678405107163": {
+        "type": "shopify://apps/instafeed/blocks/head-block/c447db20-095d-4a10-9725-b5977662c9d5",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Default": {
