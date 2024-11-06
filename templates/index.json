@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image_banner": {
@@ -21,7 +30,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Jetzt entdecken",
-            "button_link_1": "shopify:\/\/collections",
+            "button_link_1": "shopify://collections",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -35,7 +44,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/3633-46.jpg",
+        "image": "shopify://shop_images/Rolex_Banner_c75a82f4-e16b-466b-a149-0198a16914d7.webp",
         "image_overlay_opacity": 40,
         "image_height": "small",
         "desktop_content_position": "middle-center",
@@ -82,31 +91,31 @@
         "16550226679f8d52b9-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rolex_Submariner.webp",
+            "image": "shopify://shop_images/Rolex_Submariner.webp",
             "title": "Vintage-Uhren",
-            "text": "<p>Egal ob Rolex, Patek Philippe, Audemars Piguet oder Omega: Lassen Sie sich von unserer Auswahl der feinsten CPO-Uhren überzeugen. <\/p>",
+            "text": "<p>Egal ob Rolex, Patek Philippe, Audemars Piguet oder Omega: Lassen Sie sich von unserer Auswahl der feinsten CPO-Uhren überzeugen. </p>",
             "link_label": "Entdecken Sie unsere Uhren",
-            "link": "shopify:\/\/collections\/uhren"
+            "link": "shopify://collections/uhren"
           }
         },
         "16550226679f8d52b9-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Diamantring.webp",
+            "image": "shopify://shop_images/Diamantring.webp",
             "title": "Vintage-Schmuck",
-            "text": "<p>Feine Perlen, kostbare Diamanten oder farbenfrohe Steine - gefasst in edlem Gold oder Platin: Unsere Ringe, Ketten und Armbänder verkörpern zeitlose Eleganz.<\/p>",
+            "text": "<p>Feine Perlen, kostbare Diamanten oder farbenfrohe Steine - gefasst in edlem Gold oder Platin: Unsere Ringe, Ketten und Armbänder verkörpern zeitlose Eleganz.</p>",
             "link_label": "Entdecken Sie unseren Schmuck",
-            "link": "shopify:\/\/collections\/schmuck"
+            "link": "shopify://collections/schmuck"
           }
         },
         "16f01ec5-75c1-4326-9e50-621ba8ad582e": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Birkin_Bag.webp",
+            "image": "shopify://shop_images/Birkin_Bag.webp",
             "title": "Accessoires",
-            "text": "<p>Hermès, Louis Vuitton, Chanel - hochwertige Pre-loved Taschen und exklusive Accessoires ergänzen Ihren Auftritt.<\/p>",
+            "text": "<p>Hermès, Louis Vuitton, Chanel - hochwertige Pre-loved Taschen und exklusive Accessoires ergänzen Ihren Auftritt.</p>",
             "link_label": "Entdecken Sie unsere Accessoires",
-            "link": "shopify:\/\/collections\/accessoires"
+            "link": "shopify://collections/accessoires"
           }
         }
       },
@@ -173,7 +182,7 @@
         "165497435428901d61-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Gerne begutachten wir Ihre Uhren, Schmuckstücke oder Altgold - Ihre Schätze sind bei uns in guten Händen.<\/p>",
+            "text": "<p>Gerne begutachten wir Ihre Uhren, Schmuckstücke oder Altgold - Ihre Schätze sind bei uns in guten Händen.</p>",
             "text_style": "body"
           }
         },
@@ -181,7 +190,7 @@
           "type": "button",
           "settings": {
             "button_label": "Zum Ankauf",
-            "button_link": "shopify:\/\/pages\/ankauf"
+            "button_link": "shopify://pages/ankauf"
           }
         }
       },
@@ -191,7 +200,7 @@
         "165497435428901d61-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Gold_pieces.webp",
+        "image": "shopify://shop_images/Gold_pieces.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -211,9 +220,9 @@
         "165502235091fdb170-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/shopping-bag2_3M0k.png",
+            "image": "shopify://shop_images/shopping-bag2_3M0k.png",
             "title": "An- und Verkauf",
-            "text": "<p>Wir suchen und bieten Ihnen eine exquisite Auswahl an Uhren und Schmuck, stets zu fairen Preisen.<\/p>",
+            "text": "<p>Wir suchen und bieten Ihnen eine exquisite Auswahl an Uhren und Schmuck, stets zu fairen Preisen.</p>",
             "link_label": "",
             "link": ""
           }
@@ -221,9 +230,9 @@
         "165502235091fdb170-1": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/store-front_hPqS.png",
+            "image": "shopify://shop_images/store-front_hPqS.png",
             "title": "Persönliche Beratung",
-            "text": "<p>Vertrauen Sie 113 Jahren Erfahrung in der Juweliersbranche. Wir freuen uns über Ihren Besuch in unserem Laden!<\/p>",
+            "text": "<p>Vertrauen Sie 113 Jahren Erfahrung in der Juweliersbranche. Wir freuen uns über Ihren Besuch in unserem Laden!</p>",
             "link_label": "",
             "link": ""
           }
@@ -231,9 +240,9 @@
         "165502235091fdb170-2": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/zertifikat_klwJ.png",
+            "image": "shopify://shop_images/zertifikat_klwJ.png",
             "title": "Expertengutachten",
-            "text": "<p>Wir schätzen den Wert Ihrer kostbarsten Stücke bei Bedarf und erstellen Ihnen professionelle Gutachten für Versicherungen.<\/p>",
+            "text": "<p>Wir schätzen den Wert Ihrer kostbarsten Stücke bei Bedarf und erstellen Ihnen professionelle Gutachten für Versicherungen.</p>",
             "link_label": "",
             "link": ""
           }
@@ -241,9 +250,9 @@
         "5095f188-4e19-4b2c-9bd9-02258c382440": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/werkstatt_4lg5.png",
+            "image": "shopify://shop_images/werkstatt_4lg5.png",
             "title": "Meisterwerkstatt",
-            "text": "<p>Wir prüfen jede Uhr auf Herz und Nieren. Unsere zertifizierten Uhrmacher zeichnen sich aus durch absolute Präzision und ein Auge fürs Detail.<\/p>",
+            "text": "<p>Wir prüfen jede Uhr auf Herz und Nieren. Unsere zertifizierten Uhrmacher zeichnen sich aus durch absolute Präzision und ein Auge fürs Detail.</p>",
             "link_label": "",
             "link": ""
           }
@@ -264,7 +273,7 @@
         "column_alignment": "left",
         "background_style": "primary",
         "button_label": "Wer sind wir?",
-        "button_link": "shopify:\/\/pages\/about-us",
+        "button_link": "shopify://pages/about-us",
         "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
@@ -327,11 +336,12 @@
       "type": "apps",
       "blocks": {
         "instafeed_app_block_RWWbyN": {
-          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
             "title": "",
             "title_color": "",
             "alignment": "center",
+            "background_color": "",
             "html_area": ""
           }
         }
