@@ -350,6 +350,72 @@
           <div id="CartDrawer-CartErrors" role="alert"></div>
         </form>
       </cart-drawer-items>
+
+<div id="cart-timer" class="cart-timer">
+  Zeit verbleibend: <span id="countdown">15:00</span>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Timer-Startwert (15 Minuten in Millisekunden)
+    const TIMER_DURATION = 15 * 60 * 1000; 
+    
+    // Timer-Ablaufzeit aus localStorage holen oder neue setzen
+    let expiryTime = localStorage.getItem('cartExpiryTime');
+    if (!expiryTime) {
+      expiryTime = Date.now() + TIMER_DURATION;
+      localStorage.setItem('cartExpiryTime', expiryTime);
+    }
+
+    function updateTimer() {
+      const now = Date.now();
+      const timeLeft = expiryTime - now;
+
+      if (timeLeft <= 0) {
+        // Timer abgelaufen
+        clearInterval(timerInterval);
+        localStorage.removeItem('cartExpiryTime');
+        
+        // Cart leeren via Shopify AJAX API
+        fetch('/cart/clear.js', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        })
+        .then(response => response.json())
+        .then(data => {
+          window.location.reload();
+        });
+        
+        return;
+      }
+
+      // Zeit formatieren und anzeigen
+      const minutes = Math.floor(timeLeft / 60000);
+      const seconds = Math.floor((timeLeft % 60000) / 1000);
+      document.getElementById('countdown').textContent = 
+        `${minutes}:${seconds.toString().padStart(2, '0')}`;
+    }
+
+    // Timer starten
+    const timerInterval = setInterval(updateTimer, 1000);
+    updateTimer();
+  });
+</script>
+
+<style>
+  .cart-timer {
+    background: #f8f8f8;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+  }
+</style>
+
+                                
       <div class="drawer__footer">
         {%- if settings.show_cart_note -%}
           <details id="Details-CartDrawer">
