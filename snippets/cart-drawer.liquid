@@ -350,123 +350,124 @@
           <div id="CartDrawer-CartErrors" role="alert"></div>
         </form>
       </cart-drawer-items>
-
-<div id="cart-timer" class="cart-timer">
-  <div class="timer-content">
-    <span class="timer-icon">⏳</span>
-    <span class="timer-text">Ihr Warenkorb läuft ab in:</span>
-    <span id="countdown" class="countdown">15:00</span>
+{%- if cart != empty -%}
+  <div id="cart-timer" class="cart-timer">
+    <div class="timer-content">
+      <span class="timer-icon">⏳</span>
+      <span class="timer-text">Ihr Warenkorb läuft ab in:</span>
+      <span id="countdown" class="countdown">15:00</span>
+    </div>
   </div>
-</div>
 
-<script>
-  class CartTimer {
-    constructor(duration = 15 * 60) {
-      this.duration = duration;
-      this.countdownElement = document.getElementById('countdown');
-      this.expiryTime = this.getExpiryTime();
-      this.timerInterval = null;
-    }
-
-    getExpiryTime() {
-      let stored = localStorage.getItem('cartExpiryTime');
-      if (!stored || Date.now() > parseInt(stored)) {
-        stored = Date.now() + (this.duration * 1000);
-        localStorage.setItem('cartExpiryTime', stored.toString());
-      }
-      return parseInt(stored);
-    }
-
-    formatTime(timeInSeconds) {
-      const minutes = Math.floor(timeInSeconds / 60);
-      const seconds = timeInSeconds % 60;
-      return `${minutes}:${seconds.toString().padStart(2, '0')}`;
-    }
-
-    updateDisplay() {
-      const now = Date.now();
-      const timeLeft = Math.max(0, Math.ceil((this.expiryTime - now) / 1000));
-
-      if (this.countdownElement) {
-        this.countdownElement.textContent = this.formatTime(timeLeft);
+  <script>
+    class CartTimer {
+      constructor(duration = 15 * 60) {
+        this.duration = duration;
+        this.countdownElement = document.getElementById('countdown');
+        this.expiryTime = this.getExpiryTime();
+        this.timerInterval = null;
       }
 
-      if (timeLeft <= 0) {
-        this.clearCart();
-      }
-    }
-
-    async clearCart() {
-      clearInterval(this.timerInterval);
-      localStorage.removeItem('cartExpiryTime');
-      
-      try {
-        const response = await fetch('/cart/clear.js', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          }
-        });
-        
-        if (response.ok) {
-          window.location.reload();
+      getExpiryTime() {
+        let stored = localStorage.getItem('cartExpiryTime');
+        if (!stored || Date.now() > parseInt(stored)) {
+          stored = Date.now() + (this.duration * 1000);
+          localStorage.setItem('cartExpiryTime', stored.toString());
         }
-      } catch (error) {
-        console.error('Fehler beim Leeren des Warenkorbs:', error);
+        return parseInt(stored);
+      }
+
+      formatTime(timeInSeconds) {
+        const minutes = Math.floor(timeInSeconds / 60);
+        const seconds = timeInSeconds % 60;
+        return `${minutes}:${seconds.toString().padStart(2, '0')}`;
+      }
+
+      updateDisplay() {
+        const now = Date.now();
+        const timeLeft = Math.max(0, Math.ceil((this.expiryTime - now) / 1000));
+
+        if (this.countdownElement) {
+          this.countdownElement.textContent = this.formatTime(timeLeft);
+        }
+
+        if (timeLeft <= 0) {
+          this.clearCart();
+        }
+      }
+
+      async clearCart() {
+        clearInterval(this.timerInterval);
+        localStorage.removeItem('cartExpiryTime');
+        
+        try {
+          const response = await fetch('/cart/clear.js', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            }
+          });
+          
+          if (response.ok) {
+            window.location.reload();
+          }
+        } catch (error) {
+          console.error('Fehler beim Leeren des Warenkorbs:', error);
+        }
+      }
+
+      start() {
+        this.updateDisplay();
+        this.timerInterval = setInterval(() => this.updateDisplay(), 1000);
       }
     }
 
-    start() {
-      this.updateDisplay();
-      this.timerInterval = setInterval(() => this.updateDisplay(), 1000);
+    // Timer nur initialisieren, wenn der Warenkorb nicht leer ist
+    if (!document.querySelector('cart-drawer').classList.contains('is-empty')) {
+      const cartTimer = new CartTimer();
+      cartTimer.start();
     }
-  }
+  </script>
 
-  // Timer initialisieren wenn der DOM geladen ist
-  document.addEventListener('DOMContentLoaded', () => {
-    const cartTimer = new CartTimer();
-    cartTimer.start();
-  });
-</script>
+  <style>
+    .cart-timer {
+      background: #f8f8f8;
+      padding: 15px;
+      margin: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
 
-<style>
-  .cart-timer {
-    background: #f8f8f8;
-    padding: 15px;
-    margin: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-
-  .timer-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .timer-icon {
-    font-size: 1.2em;
-  }
-
-  .timer-text {
-    font-size: 0.9em;
-    color: #666;
-  }
-
-  .countdown {
-    font-weight: bold;
-    color: #e94444;
-    font-size: 1.1em;
-  }
-
-  @media (max-width: 768px) {
     .timer-content {
-      flex-direction: column;
-      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
     }
-  }
-</style>
+
+    .timer-icon {
+      font-size: 1.2em;
+    }
+
+    .timer-text {
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    .countdown {
+      font-weight: bold;
+      color: #e94444;
+      font-size: 1.1em;
+    }
+
+    @media (max-width: 768px) {
+      .timer-content {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+{%- endif -%}
 
                                 
       <div class="drawer__footer">
