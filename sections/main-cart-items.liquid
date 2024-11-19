@@ -388,7 +388,9 @@
 }
 {% endschema %}
 
-                          {%- if cart != empty -%}
+{% comment %} (2024.11.19 / PS) Einführung von zeitlich begrenztem Warenkorb {% endcomment %}
+                          
+{%- if cart != empty -%}
   <div id="cart-timer" class="cart-timer">
     <div class="timer-content">
       <span class="timer-icon">⏳</span>
