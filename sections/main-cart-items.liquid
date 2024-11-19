@@ -390,7 +390,7 @@
 
 {% comment %} (2024.11.19 / PS) Einführung von zeitlich begrenztem Warenkorb {% endcomment %}
                           
-{%- if cart != empty -%}
+   {%- if cart != empty -%}
   <div id="cart-timer" class="cart-timer">
     <div class="timer-content">
       <span class="timer-icon">⏳</span>
@@ -404,17 +404,26 @@
       constructor(duration = 15 * 60) {
         this.duration = duration;
         this.countdownElement = document.getElementById('countdown');
-        this.expiryTime = this.getExpiryTime();
         this.timerInterval = null;
+        this.lastCartState = '{{ cart.item_count }}'; // Speichere aktuellen Warenkorb-Status
+        this.initializeTimer();
       }
 
-      getExpiryTime() {
-        let stored = localStorage.getItem('cartExpiryTime');
-        if (!stored || Date.now() > parseInt(stored)) {
-          stored = Date.now() + (this.duration * 1000);
-          localStorage.setItem('cartExpiryTime', stored.toString());
+      initializeTimer() {
+        this.expiryTime = Date.now() + (this.duration * 1000);
+        localStorage.setItem('cartExpiryTime', this.expiryTime.toString());
+        localStorage.setItem('lastCartState', this.lastCartState);
+      }
+
+      checkCartState() {
+        const currentCartState = '{{ cart.item_count }}';
+        const storedCartState = localStorage.getItem('lastCartState');
+        
+        // Wenn sich der Warenkorb geändert hat, Timer neu starten
+        if (currentCartState !== storedCartState) {
+          this.initializeTimer();
+          this.lastCartState = currentCartState;
         }
-        return parseInt(stored);
       }
 
       formatTime(timeInSeconds) {
@@ -424,6 +433,7 @@
       }
 
       updateDisplay() {
+        this.checkCartState(); // Prüfe Warenkorb-Änderungen
         const now = Date.now();
         const timeLeft = Math.max(0, Math.ceil((this.expiryTime - now) / 1000));
 
@@ -439,6 +449,7 @@
       async clearCart() {
         clearInterval(this.timerInterval);
         localStorage.removeItem('cartExpiryTime');
+        localStorage.removeItem('lastCartState');
         
         try {
           const response = await fetch('/cart/clear.js', {
@@ -466,6 +477,12 @@
     document.addEventListener('DOMContentLoaded', () => {
       const cartTimer = new CartTimer();
       cartTimer.start();
+    });
+
+    // Zusätzlich: Überwache Ajax-Cart-Updates
+    document.addEventListener('cart:updated', (event) => {
+      const cartTimer = new CartTimer();
+      cartTimer.initializeTimer();
     });
   </script>
 {%- endif -%}
