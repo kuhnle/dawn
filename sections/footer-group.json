@@ -32,7 +32,7 @@
           "type": "text",
           "settings": {
             "heading": "Anfahrt und Öffnungszeiten",
-            "subtext": "<p>Königstraße 141<br/>90762 Fürth<br/><strong><br/>Montag</strong>: <br/>geschlossen<br/><strong>Dienstag - Freitag: </strong><br/>9:30-13:00 und 14:00-18:00 Uhr<br/><strong>Samstag:</strong><br/>9:30 - 15:00 Uhr<strong><br/><br/>Samstag 01.11.2025 Allerheiligen<br/>geschlossen</strong></p>"
+            "subtext": "<p>Königstraße 141<br/>90762 Fürth<br/><strong><br/>Montag</strong>: <br/>geschlossen<br/><strong>Dienstag - Freitag: </strong><br/>9:30-13:00 und 14:00-18:00 Uhr<br/><strong>Samstag:</strong><br/>9:30 - 15:00 Uhr</p><p><strong>Adventssamstage 09:30 - 17:00 Uhr<br/><br/>Montag, 22.12.25   9:30 - 18:00 Uhr<br/>Heiligabend              9:30 - 13:00 Uhr</strong><br/><br/> <br/></p>"
           }
         }
       },
