@@ -51,7 +51,7 @@
         "1655716968562d05a1-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Auch wenn Sie Ihre Wertgegenstände zu marktgerechten Preisen verkaufen möchten oder ein Gutachten z.B. für die Versicherung benötigen, sind wir Ihr erster Ansprechpartner und beraten Sie gern.<br/></p><p>Im Jahr 2020 konnten wir Vintage-Expertin Kerstin „Kiki“ Hermann für unser Team gewinnen.<br/><br/>Durch die langjährige und umfangreiche Tätigkeit als Leiterin des Expertenzentrums sowie der Uhrenabteilung für ein renommiertes Auktionshaus in Süddeutschland, hatte sie die Möglichkeit ihre Expertise ständig zu erweitern und viel Erfahrung zu sammeln.<br/><br/>Wir freuen uns auf Ihren Besuch!</p>",
+            "text": "<p>Auch wenn Sie Ihre Wertgegenstände zu marktgerechten Preisen verkaufen möchten oder ein Gutachten z.B. für die Versicherung benötigen, sind wir Ihr erster Ansprechpartner und beraten Sie gern.<br/></p><p>Durch unsere langjährige und umfangreiche Erfahrung durch unseren direkten Anschluss an Juwelier Kuhnle mit Goldschmiede und Uhrmacherei profitieren Sie von unserer fachlichen Expertise.<br/>Wir freuen uns auf Ihren Besuch!</p>",
             "text_style": "body"
           }
         }
@@ -60,11 +60,11 @@
         "1655716968562d05a1-1"
       ],
       "settings": {
-        "image": "shopify://shop_images/Kerstin_Hermann.jpg",
+        "image": "shopify://shop_images/22_post_9_product.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
-        "desktop_content_position": "top",
+        "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "color_scheme": "background-2",
