@@ -22,7 +22,7 @@
         "12615e7f-4b05-4c56-a252-4d3dc40235d0": {
           "type": "text",
           "settings": {
-            "text": "Zertifizierte Uhrmacherwerkstatt • 113 Jahre Branchenerfahrung • 400+ zufriedene Kunden",
+            "text": "Zertifizierte Uhrmacherwerkstatt • 113 Jahre Branchenerfahrung • 600+ zufriedene Kunden",
             "text_style": "subtitle"
           }
         },
@@ -340,8 +340,16 @@
           "settings": {
             "title": "",
             "title_color": "",
+            "title_size_v2": 0,
             "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 0,
+            "instafeed_margin_sides": 0,
+            "show_instagram_link": false,
+            "link_alignment": "left",
+            "link_color": "#000000",
             "background_color": "",
+            "feed_id": "",
             "html_area": ""
           }
         }
